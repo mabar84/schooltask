@@ -1,0 +1,21 @@
+.menu {
+    width: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(208, 238, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 32px 32px;
+    // display: none;
+    top: 228px;
+    left: 0;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-out;
+    &.active {
+        max-height: 594px;
+        padding-bottom: 16px;
+    }
+}

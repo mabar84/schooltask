@@ -203,9 +203,35 @@ address {
   right: -60px;
   top: -120px;
 }
+.breadcrumbs-wrapper .ellipse.active {
+  border-radius: 0;
+}
+
+.menu {
+  width: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(208, 238, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 32px 32px;
+  top: 228px;
+  left: 0;
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease-out;
+}
+.menu.active {
+  max-height: 594px;
+  padding-bottom: 16px;
+}
 
 .class-select {
-  padding: 10px 20px;
+  width: 183px;
+  height: 42px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -214,6 +240,24 @@ address {
   background: #f8991d;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+.class-select::before {
+  content: "";
+  border-radius: 8px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  position: absolute;
+}
+.class-select:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.class-select:hover::before {
+  background: rgba(255, 255, 255, 0.08);
 }
 .class-select .text {
   font-weight: 600;
@@ -225,6 +269,11 @@ address {
   width: 12px;
   height: 5px;
 }
-.class-select:active {
-  background: red;
+
+.class-select_item {
+  padding: 10px 26px 10px 20px;
+  justify-content: space-between;
+}
+.class-select_item .img {
+  transform: rotate(270deg);
 }
