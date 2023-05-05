@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    .blur {
+        height: 154px;
+        background: rgba(208, 238, 255, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 0px 0px 32px 0px;
+    }
+    .logo {
+        width: 242px;
+        height: 139px;
+        position: absolute;
+        left: 70px;
+        top: 15px;
+    }
+    .bg {
+        width: 748px;
+        height: 217px;
+        position: absolute;
+        left: 70px;
+        top: 0px;
+    }
+    .el20 {
+        width: 45px;
+        height: 46px;
+        top: 167px;
+        left: 299px;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.2;
+        background: #ffefd8;
+    }
+}

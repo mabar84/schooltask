@@ -1,0 +1,40 @@
+.breadcrumbs-wrapper {
+    display: flex;
+    gap: 48px;
+    .breadcrumbs {
+        height: 74px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+        font-size: 16px;
+        line-height: 24px;
+        color: #636363;
+        z-index: 1;
+    }
+    .ellipse {
+        width: 322px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(208, 238, 255, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 0px 0px 32px 32px;
+        &::after {
+            content: "";
+            background: radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 35px, rgba(208, 238, 255, 0.5) 10px);
+            background-position: top left;
+            backdrop-filter: blur(5px);
+            background-size: 57% 57%;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-top: 120px;
+            padding: 30px;
+            position: absolute;
+            right: -60px;
+            top: -120px;
+        }
+    }
+}
