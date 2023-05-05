@@ -9,11 +9,28 @@
   </head>
   <body>
     <header class="header container">
-      <!-- <div class="el20"></div> -->
       <img src="img/bg-header-svg.svg" alt="x" class="bg" />
       <div class="blur"></div>
+      <div class="search">
+        <input type="text" id="header-search_input" class="search-input" placeholder="Поиск по автору" />
+        <img src="img/svgicons/search-icon.svg" alt="icon" class="search-icon" />
+      </div>
       <img src="img/svgicons/logo.svg" alt="logo" class="logo" />
 
+      <nav class="nav-buttons">
+        <div class="nav-button active">
+          <p class="nav-link">Учебники</p>
+          <div class="nav-marker"></div>
+        </div>
+        <div class="nav-button">
+          <p class="nav-link">Сочинения</p>
+          <div class="nav-marker"></div>
+        </div>
+        <div class="nav-button">
+          <p class="nav-link">Контакты</p>
+          <div class="nav-marker"></div>
+        </div>
+      </nav>
       <div class="breadcrumbs-wrapper">
         <div class="ellipse">
           <div class="class-select">
@@ -31,9 +48,7 @@
       </div>
     </header>
 
-    <main class="container">
-      <nav class="menu"></nav>
-    </main>
+    <main class="container"></main>
 
     <script src="js/main.js"></script>
   </body>
