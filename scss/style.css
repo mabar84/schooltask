@@ -220,12 +220,67 @@ address {
   left: 0;
   position: absolute;
   max-height: 0;
-  overflow: hidden;
   transition: max-height 0.9s ease-out;
+  overflow: hidden;
 }
 .menu.active {
   max-height: 594px;
   padding-bottom: 16px;
+}
+.menu-additional {
+  width: 200px;
+  padding: 11px 16px;
+  background: #ffac4e;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 260px;
+  display: none;
+}
+.menu-additional.active {
+  display: block;
+}
+.menu-additional_title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.menu-additional_item {
+  display: block;
+  text-align: center;
+  padding: 9px;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.menu-additional_item:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.menu-additional_01 {
+  top: 228px;
+}
+.menu-additional_02 {
+  top: 280px;
+}
+.menu-additional_03 {
+  top: 332px;
+}
+.menu-additional_04 {
+  top: 384px;
+}
+.menu-additional_05 {
+  top: 436px;
+}
+.menu-additional_06, .menu-additional_07, .menu-additional_08, .menu-additional_09, .menu-additional_10, .menu-additional_11 {
+  top: auto;
+  bottom: -561px;
 }
 
 .class-select {
