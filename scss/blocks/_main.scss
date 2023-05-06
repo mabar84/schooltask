@@ -1,55 +1,87 @@
 .main {
-    // display: flex;
-    // justify-content: space-between;
-    // gap: 24px;
+    position: relative;
     display: grid;
     grid-gap: 24px;
-    //  grid-template-rows: 10vh 1fr;
     grid-template-columns: 1fr 270px;
     grid-template-areas:
-        "cards banners"
+        "subjects banners"
         "books banners"
         "question banners";
-    @include for-1170-px {
+    @include for-1340-px {
+        grid-gap: 0;
         grid-template-columns: 1fr;
-
         grid-template-areas:
-            "cards"
+            "subjects"
             "books"
             "banners "
             "question";
     }
-    .banners {
-        height: 1800px;
-        background: red;
-        grid-area: banners;
+    .el37 {
+        width: 168px;
+        height: 168px;
+        position: absolute;
+        left: -58px;
+        top: 178px;
+        border-radius: 50%;
+        background: #caf3ee;
+        opacity: 0.2;
+        @include for-1025-px {
+            left: 62px;
+        }
     }
-    .books {
-        min-height: 100px;
-        grid-area: books;
-        background: blue;
+    .el38 {
+        position: absolute;
+        width: 62.25px;
+        height: 62.25px;
+        left: 41px;
+        top: 578px;
+        background: #ff7f68;
+        opacity: 0.4;
+        border-radius: 50%;
+        @include for-1025-px {
+            left: 161px;
+        }
     }
-    .question {
-        grid-area: question;
-
-        min-height: 100px;
-
-        background: lawngreen;
+    .el39 {
+        position: absolute;
+        width: 98px;
+        height: 98px;
+        left: -84px;
+        top: 458px;
+        border-radius: 50%;
+        background: #e9e091;
+        opacity: 0.2;
+        @include for-1025-px {
+            left: -4px;
+        }
     }
-    .cards {
-        grid-area: cards;
-
-        background: #000;
+    .subjects {
+        padding-left: 70px;
+        margin-bottom: 60px;
+        grid-area: subjects;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 16px;
+        @include for-1340-px {
+            width: calc(100vw - 108px);
+            padding-left: 0;
+            margin: 0 auto 40px;
+            justify-content: center;
+        }
+        @include for-640-px {
+            width: calc(100vw - 20px);
+        }
         .card {
             width: 292px;
             height: 210px;
             overflow: hidden;
+            @include for-640-px {
+                width: 301px;
+            }
             .top {
                 display: flex;
                 gap: 12px;
-            }
-            .text {
-                // display: flex;
             }
             .name {
                 padding-top: 10px;
@@ -57,7 +89,60 @@
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 24px;
-                color: #4599f9;
+                &.math {
+                    color: #4599f9;
+                }
+                &.geom {
+                    color: #c06700;
+                }
+                &.phys {
+                    color: #0c40f9;
+                }
+                &.alg {
+                    color: #ee6046;
+                }
+                &.lit {
+                    color: #d78528;
+                }
+                &.hist {
+                    color: #979221;
+                }
+                &.eng {
+                    color: #ee6046;
+                }
+                &.geo {
+                    color: #0b6ca1;
+                }
+                &.rus {
+                    color: #80641b;
+                }
+                &.bio {
+                    color: #0c9d09;
+                }
+                &.chem {
+                    color: #803f90;
+                }
+                &.world {
+                    color: #904500;
+                }
+                &.inform {
+                    color: #002c55;
+                }
+                &.de {
+                    color: #593221;
+                }
+                &.obj {
+                    color: #6c0404;
+                }
+                &.tech {
+                    color: #02662a;
+                }
+                &.soc {
+                    color: #383600;
+                }
+                &.mus {
+                    color: #7e0f74;
+                }
             }
             .classes {
                 font-size: 14px;
@@ -70,12 +155,236 @@
                 flex-wrap: wrap;
                 column-gap: 16px;
                 row-gap: 22px;
+                @include for-640-px {
+                    column-gap: 17px;
+                }
                 & a {
                     width: min-content;
                 }
             }
         }
     }
-    .right {
+    .banners {
+        grid-area: banners;
+        @include for-1340-px {
+            width: calc(100vw - 108px);
+            padding: 0;
+            margin: 0 auto 60px;
+        }
+        @include for-760-px {
+            width: 301px;
+            margin: 0 auto 30px;
+        }
+        .help {
+            padding: 32px 16px;
+            @include for-1340-px {
+                padding: 37px 58px;
+                display: flex;
+                justify-content: space-between;
+            }
+            @include for-1000-px {
+                padding: 32px 15px;
+                gap: 28px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .wrapper {
+                @include for-1340-px {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+                @include for-760-px {
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 0;
+                }
+            }
+            .title {
+                margin-bottom: 8px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: #131930;
+                @include for-1340-px {
+                    margin-bottom: 0;
+                }
+                @include for-1000-px {
+                    font-size: 21px;
+                }
+                @include for-760-px {
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                }
+            }
+            .text {
+                margin-bottom: 24px;
+                font-size: 17px;
+                line-height: 24px;
+                color: #131930;
+                @include for-1340-px {
+                    margin-bottom: 0;
+                }
+                @include for-1000-px {
+                    font-size: 16px;
+                }
+            }
+            .send {
+                display: inline-block;
+                padding: 10px 20px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #ffffff;
+                background: #f8991d;
+                border-radius: 8px;
+                @include for-1000-px {
+                    padding: 10px 40px;
+                    text-align: center;
+                    width: max-content;
+                }
+                @include for-760-px {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    .books {
+        padding-left: 70px;
+        grid-area: books;
+        margin-bottom: 60px;
+        @include for-1340-px {
+            width: calc(100vw - 108px);
+            padding-left: 0;
+            margin: 0 auto 60px;
+        }
+        @include for-1000-px {
+            padding: 0 20px;
+        }
+        @include for-640-px {
+            width: calc(100vw - 20px);
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .title {
+            margin-bottom: 24px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 42px;
+            color: #131930;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+            @include for-1025-px {
+                overflow: hidden;
+                height: 302px;
+                justify-content: space-between;
+            }
+            .book {
+                min-width: 134px;
+                max-width: 134px;
+                font-size: 12px;
+                line-height: 18px;
+                color: #131930;
+                .image-wrapper {
+                    margin-bottom: 16px;
+                    background: rgba(124, 208, 255, 0.5);
+                    border-radius: 16px;
+                    padding: 7px 8px;
+                    & .book-cover {
+                        object-fit: cover;
+                        border-radius: 14px;
+                    }
+                }
+                .name {
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .for-class {
+                    margin-bottom: 8px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .year {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .question {
+        margin-bottom: 266px;
+        padding-left: 70px;
+        grid-area: question;
+        @include for-1340-px {
+            width: calc(100vw - 108px);
+            padding: 0;
+            margin: 0 auto 90px;
+        }
+        @include for-760-px {
+            width: calc(100vw - 20px);
+            margin-bottom: 182px;
+        }
+        .card {
+            padding: 60px 24px;
+            gap: 86px;
+            display: flex;
+            justify-content: center;
+            @include for-1000-px {
+                gap: 16px;
+                align-items: center;
+            }
+            @include for-760-px {
+                padding: 16px;
+                flex-direction: column;
+            }
+        }
+        &-image {
+            width: 364px;
+            height: 318px;
+            object-fit: cover;
+            @include for-1000-px {
+                width: 285px;
+                height: 249px;
+            }
+        }
+        .wrapper {
+            padding: 16px 0;
+            @include for-1000-px {
+                padding: 0;
+            }
+            .title {
+                margin-bottom: 24px;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 42px;
+                color: #131930;
+                @include for-1000-px {
+                    font-size: 26px;
+                }
+                @include for-760-px {
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+            .text {
+                width: 400px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #131930;
+                @include for-1000-px {
+                    font-size: 12px;
+                    width: auto;
+                }
+                @include for-760-px {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
     }
 }

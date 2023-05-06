@@ -12,10 +12,18 @@
             left: -33px;
         }
         @include for-760-px {
-            width: 290px;
-            height: 220px;
-            top: 10px;
-            left: -27px;
+            display: none;
+        }
+        &-mobile {
+            display: none;
+            @include for-760-px {
+                position: absolute;
+                width: 290px;
+                height: 220px;
+                top: 10px;
+                left: -27px;
+                display: block;
+            }
         }
     }
     .blur {

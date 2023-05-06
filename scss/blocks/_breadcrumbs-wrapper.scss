@@ -51,6 +51,9 @@
             position: absolute;
             right: -60px;
             top: -120px;
+            @include for-760-px {
+                display: none;
+            }
         }
         &.active {
             border-radius: 0;

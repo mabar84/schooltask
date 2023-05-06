@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <title>schooltask2</title>
+  </head>
+  <body>
+    <header class="header container">
+      <img src="img/bg-header-svg.svg" alt="x" class="bg" />
+      <img src="img/bg-header-svg-mobile.svg" alt="x" class="bg-mobile" />
+      <div class="blur"></div>
+      <div class="search">
+        <input type="text" id="header-search_input" class="search-input" placeholder="Поиск по автору" />
+        <img src="img/svgicons/search-icon.svg" alt="icon" class="search-icon" />
+      </div>
+      <img src="img/svgicons/logo.svg" alt="logo" class="logo" />
+      <img src="img/svgicons/nav-buttons_mobile.svg" alt="menu" class="nav-buttons_mobile" />
+
+      <nav class="nav-buttons">
+        <div class="nav-button active">
+          <p class="nav-link">Учебники</p>
+          <div class="nav-marker"></div>
+        </div>
+        <div class="nav-button">
+          <p class="nav-link">Сочинения</p>
+          <div class="nav-marker"></div>
+        </div>
+        <div class="nav-button">
+          <p class="nav-link">Контакты</p>
+          <div class="nav-marker"></div>
+        </div>
+      </nav>
+
+      <nav class="nav-menu_mobile">
+        <a href="#" class="nav-menu_mobile-link">Учебники</a>
+        <a href="#" class="nav-menu_mobile-link">Сочинения</a>
+        <a href="#" class="nav-menu_mobile-link">Контакты</a>
+      </nav>
+      <div class="breadcrumbs-wrapper">
+        <div class="ellipse">
+          <div class="class-select" id="class-select">
+            <span class="text">Выберите класс</span>
+            <img src="img/svgicons/arrow.svg" class="img" alt="v" />
+          </div>
+        </div>
+        <div class="breadcrumbs">
+          <a href="#" class="link"> Главная </a>
+          <span>/</span>
+          <a href="#" class="link"> 1 класс </a>
+          <span>/</span>
+          <a href="#" class="link"> Математика</a>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="class-select class-select_item" for="menu-additional_01">
+          <span class="text">1 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_02">
+          <span class="text">2 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_03">
+          <span class="text">3 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_04">
+          <span class="text">4 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_05">
+          <span class="text">5 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_06">
+          <span class="text">6 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_07">
+          <span class="text">7 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_08">
+          <span class="text">8 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_09">
+          <span class="text">9 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_10">
+          <span class="text">10 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_11">
+          <span class="text">11 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+      </div>
+      <div class="menu-additional menu-additional_01">
+        <div class="wrapper"></div>
+        <p class="menu-additional_title">1 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_02">
+        <p class="menu-additional_title">2 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_03">
+        <p class="menu-additional_title">3 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_04">
+        <p class="menu-additional_title">4 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_05">
+        <p class="menu-additional_title">5 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_06">
+        <p class="menu-additional_title">6 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_07">
+        <p class="menu-additional_title">7 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_08">
+        <p class="menu-additional_title">8 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_09">
+        <p class="menu-additional_title">9 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_10">
+        <p class="menu-additional_title">10 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_11">
+        <p class="menu-additional_title">11 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+    </header>
+
+    <main class="main container">
+      <div class="el37"></div>
+      <div class="el38"></div>
+      <div class="el39"></div>
+      <section class="subjects">
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/math.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name math">Математика</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/geom.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name geom">Геометрия</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/phys.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name phys">Физика</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/alg.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name alg">Алгебра</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/lit.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name lit">Литература</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/hist.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name hist">История</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/eng.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name eng">Англиский язык</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/geo.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name geo">География</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/rus.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name rus">Русский</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/bio.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name bio">Биология</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/chem.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name chem">Химия</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/world.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name world">Окружающий мир</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/inform.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name inform">Информатика</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/de.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name de">Немецкий язык</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/obj.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name obj">ОБЖ</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/tech.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name tech">Технология</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/soc.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name soc">Обществознание</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="img/svgicons/mus.svg" alt="icon" class="icon" />
+            <div class="text">
+              <p class="name">Музыка</p>
+              <p class="classes">1 - 10 класс</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <a href="#">
+              <p class="number">1</p>
+            </a>
+            <a href="#">
+              <p class="number">2</p>
+            </a>
+            <a href="#">
+              <p class="number">3</p>
+            </a>
+            <a href="#">
+              <p class="number">4</p>
+            </a>
+            <a href="#">
+              <p class="number">5</p>
+            </a>
+            <a href="#">
+              <p class="number">6</p>
+            </a>
+            <a href="#">
+              <p class="number primary">7</p>
+            </a>
+            <a href="#">
+              <p class="number primary">8</p>
+            </a>
+            <a href="#">
+              <p class="number primary">9</p>
+            </a>
+            <a href="#">
+              <p class="number primary">10</p>
+            </a>
+            <a href="#">
+              <p class="number primary">11</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="banners">
+        <div class="help card">
+          <div class="wrapper">
+            <p class="title">Помоги проекту!</p>
+            <p class="text">Есть сочинение? Пришли&nbsp;его&nbsp;нам&nbsp;и&nbsp;мы его опубликуем!</p>
+          </div>
+          <a href="#" class="send">Прислать</a>
+        </div>
+      </section>
+      <section class="books">
+        <h3 class="title">Русский язык</h3>
+        <div class="cards">
+          <a href="#" class="book">
+            <div class="image-wrapper">
+              <img src="img/book.png" alt="cover" class="book-cover" />
+            </div>
+            <p class="name">Математика</p>
+            <p class="for-class">5 класс</p>
+            <p class="author">Герасимов В. Д.,</p>
+            <p class="author">Пирютко О. Н.</p>
+            <p class="year">2017</p>
+          </a>
+          <a href="#" class="book">
+            <div class="image-wrapper">
+              <img src="img/book.png" alt="cover" class="book-cover" />
+            </div>
+            <p class="name">Математика</p>
+            <p class="for-class">5 класс</p>
+            <p class="author">Герасимов В. Д.,</p>
+            <p class="author">Пирютко О. Н.</p>
+            <p class="year">2017</p>
+          </a>
+          <a href="#" class="book">
+            <div class="image-wrapper">
+              <img src="img/book.png" alt="cover" class="book-cover" />
+            </div>
+            <p class="name">Математика</p>
+            <p class="for-class">5 класс</p>
+            <p class="author">Герасимов В. Д.,</p>
+            <p class="author">Пирютко О. Н.</p>
+            <p class="year">2017</p>
+          </a>
+          <a href="#" class="book">
+            <div class="image-wrapper">
+              <img src="img/book.png" alt="cover" class="book-cover" />
+            </div>
+            <p class="name">Математика</p>
+            <p class="for-class">5 класс</p>
+            <p class="author">Герасимов В. Д.,</p>
+            <p class="author">Пирютко О. Н.</p>
+            <p class="year">2017</p>
+          </a>
+          <a href="#" class="book">
+            <div class="image-wrapper">
+              <img src="img/book.png" alt="cover" class="book-cover" />
+            </div>
+            <p class="name">Математика</p>
+            <p class="for-class">5 класс</p>
+            <p class="author">Герасимов В. Д.,</p>
+            <p class="author">Пирютко О. Н.</p>
+            <p class="year">2017</p>
+          </a>
+          <a href="#" class="book">
+            <div class="image-wrapper">
+              <img src="img/book.png" alt="cover" class="book-cover" />
+            </div>
+            <p class="name">Математика</p>
+            <p class="for-class">5 класс</p>
+            <p class="author">Герасимов В. Д.,</p>
+            <p class="author">Пирютко О. Н.</p>
+            <p class="year">2017</p>
+          </a>
+        </div>
+      </section>
+      <section class="question">
+        <div class="card">
+          <img src="img/question.png" alt="?" class="question-image" />
+          <div class="wrapper">
+            <div class="title">Кому полезны ГДЗ?</div>
+            <div class="text">
+              Готовые домашние задания помогут ученикам разобраться с непростой программой белорусских школ. С помощью наших решебников школьник может
+              самостоятельно изучить пропущенную тему. Ход решения помогает понять логику выполнения упражнения, благодаря чего ученик начинает справляться с
+              материалом. ГДЗ также полезны родителям, которые пытаются помочь своим детям, но не могут целиком и полностью помнить школьную программу.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="left">
+        <p>© ️2023 schooltask.ru</p>
+        <p>Копирование материалов запрещено</p>
+      </div>
+      <div class="right">
+        <a href="#">О проекте</a>
+        <a href="#">Политика конфидециальности</a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

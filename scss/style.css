@@ -57,19 +57,6 @@ address {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Poppins";
-  font-display: swap;
-  src: url("../fonts/poppins-regular.woff2") format("woff2"), url("../fonts/poppins-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-* {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-style: normal;
-}
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -77,6 +64,9 @@ address {
 
 * {
   outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header {
@@ -98,10 +88,20 @@ address {
 }
 @media (max-width: 760px) {
   .header .bg {
+    display: none;
+  }
+}
+.header .bg-mobile {
+  display: none;
+}
+@media (max-width: 760px) {
+  .header .bg-mobile {
+    position: absolute;
     width: 290px;
     height: 220px;
     top: 10px;
     left: -27px;
+    display: block;
   }
 }
 .header .blur {
@@ -354,6 +354,11 @@ address {
   right: -60px;
   top: -120px;
 }
+@media (max-width: 760px) {
+  .breadcrumbs-wrapper .ellipse::after {
+    display: none;
+  }
+}
 .breadcrumbs-wrapper .ellipse.active {
   border-radius: 0;
 }
@@ -457,68 +462,457 @@ address {
 }
 
 .main {
+  position: relative;
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 1fr 270px;
-  grid-template-areas: "cards banners" "books banners" "question banners";
+  grid-template-areas: "subjects banners" "books banners" "question banners";
 }
-@media (max-width: 1170px) {
+@media (max-width: 1340px) {
   .main {
+    grid-gap: 0;
     grid-template-columns: 1fr;
-    grid-template-areas: "cards" "books" "banners " "question";
+    grid-template-areas: "subjects" "books" "banners " "question";
   }
 }
-.main .banners {
-  height: 1800px;
-  background: red;
-  grid-area: banners;
+.main .el37 {
+  width: 168px;
+  height: 168px;
+  position: absolute;
+  left: -58px;
+  top: 178px;
+  border-radius: 50%;
+  background: #caf3ee;
+  opacity: 0.2;
 }
-.main .books {
-  min-height: 100px;
-  grid-area: books;
-  background: blue;
+@media (max-width: 1025px) {
+  .main .el37 {
+    left: 62px;
+  }
 }
-.main .question {
-  grid-area: question;
-  min-height: 100px;
-  background: lawngreen;
+.main .el38 {
+  position: absolute;
+  width: 62.25px;
+  height: 62.25px;
+  left: 41px;
+  top: 578px;
+  background: #ff7f68;
+  opacity: 0.4;
+  border-radius: 50%;
 }
-.main .cards {
-  grid-area: cards;
-  background: #000;
+@media (max-width: 1025px) {
+  .main .el38 {
+    left: 161px;
+  }
 }
-.main .cards .card {
+.main .el39 {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  left: -84px;
+  top: 458px;
+  border-radius: 50%;
+  background: #e9e091;
+  opacity: 0.2;
+}
+@media (max-width: 1025px) {
+  .main .el39 {
+    left: -4px;
+  }
+}
+.main .subjects {
+  padding-left: 70px;
+  margin-bottom: 60px;
+  grid-area: subjects;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 16px;
+}
+@media (max-width: 1340px) {
+  .main .subjects {
+    width: calc(100vw - 108px);
+    padding-left: 0;
+    margin: 0 auto 40px;
+    justify-content: center;
+  }
+}
+@media (max-width: 640px) {
+  .main .subjects {
+    width: calc(100vw - 20px);
+  }
+}
+.main .subjects .card {
   width: 292px;
   height: 210px;
   overflow: hidden;
 }
-.main .cards .card .top {
+@media (max-width: 640px) {
+  .main .subjects .card {
+    width: 301px;
+  }
+}
+.main .subjects .card .top {
   display: flex;
   gap: 12px;
 }
-.main .cards .card .name {
+.main .subjects .card .name {
   padding-top: 10px;
   margin-bottom: 14px;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+}
+.main .subjects .card .name.math {
   color: #4599f9;
 }
-.main .cards .card .classes {
+.main .subjects .card .name.geom {
+  color: #c06700;
+}
+.main .subjects .card .name.phys {
+  color: #0c40f9;
+}
+.main .subjects .card .name.alg {
+  color: #ee6046;
+}
+.main .subjects .card .name.lit {
+  color: #d78528;
+}
+.main .subjects .card .name.hist {
+  color: #979221;
+}
+.main .subjects .card .name.eng {
+  color: #ee6046;
+}
+.main .subjects .card .name.geo {
+  color: #0b6ca1;
+}
+.main .subjects .card .name.rus {
+  color: #80641b;
+}
+.main .subjects .card .name.bio {
+  color: #0c9d09;
+}
+.main .subjects .card .name.chem {
+  color: #803f90;
+}
+.main .subjects .card .name.world {
+  color: #904500;
+}
+.main .subjects .card .name.inform {
+  color: #002c55;
+}
+.main .subjects .card .name.de {
+  color: #593221;
+}
+.main .subjects .card .name.obj {
+  color: #6c0404;
+}
+.main .subjects .card .name.tech {
+  color: #02662a;
+}
+.main .subjects .card .name.soc {
+  color: #383600;
+}
+.main .subjects .card .name.mus {
+  color: #7e0f74;
+}
+.main .subjects .card .classes {
   font-size: 14px;
   line-height: 22px;
   color: #131930;
 }
-.main .cards .card .bottom {
+.main .subjects .card .bottom {
   padding: 22px 16px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 22px;
 }
-.main .cards .card .bottom a {
+@media (max-width: 640px) {
+  .main .subjects .card .bottom {
+    column-gap: 17px;
+  }
+}
+.main .subjects .card .bottom a {
   width: min-content;
 }
+.main .banners {
+  grid-area: banners;
+}
+@media (max-width: 1340px) {
+  .main .banners {
+    width: calc(100vw - 108px);
+    padding: 0;
+    margin: 0 auto 60px;
+  }
+}
+@media (max-width: 760px) {
+  .main .banners {
+    width: 301px;
+    margin: 0 auto 30px;
+  }
+}
+.main .banners .help {
+  padding: 32px 16px;
+}
+@media (max-width: 1340px) {
+  .main .banners .help {
+    padding: 37px 58px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1000px) {
+  .main .banners .help {
+    padding: 32px 15px;
+    gap: 28px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1340px) {
+  .main .banners .help .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+@media (max-width: 760px) {
+  .main .banners .help .wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+}
+.main .banners .help .title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #131930;
+}
+@media (max-width: 1340px) {
+  .main .banners .help .title {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .main .banners .help .title {
+    font-size: 21px;
+  }
+}
+@media (max-width: 760px) {
+  .main .banners .help .title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+.main .banners .help .text {
+  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #131930;
+}
+@media (max-width: 1340px) {
+  .main .banners .help .text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .main .banners .help .text {
+    font-size: 16px;
+  }
+}
+.main .banners .help .send {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  background: #f8991d;
+  border-radius: 8px;
+}
+@media (max-width: 1000px) {
+  .main .banners .help .send {
+    padding: 10px 40px;
+    text-align: center;
+    width: max-content;
+  }
+}
+@media (max-width: 760px) {
+  .main .banners .help .send {
+    margin-right: auto;
+  }
+}
+.main .books {
+  padding-left: 70px;
+  grid-area: books;
+  margin-bottom: 60px;
+}
+@media (max-width: 1340px) {
+  .main .books {
+    width: calc(100vw - 108px);
+    padding-left: 0;
+    margin: 0 auto 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .main .books {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 640px) {
+  .main .books {
+    width: calc(100vw - 20px);
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+.main .books .title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  color: #131930;
+}
+.main .books .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+@media (max-width: 1025px) {
+  .main .books .cards {
+    overflow: hidden;
+    height: 302px;
+    justify-content: space-between;
+  }
+}
+.main .books .cards .book {
+  min-width: 134px;
+  max-width: 134px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #131930;
+}
+.main .books .cards .book .image-wrapper {
+  margin-bottom: 16px;
+  background: rgba(124, 208, 255, 0.5);
+  border-radius: 16px;
+  padding: 7px 8px;
+}
+.main .books .cards .book .image-wrapper .book-cover {
+  object-fit: cover;
+  border-radius: 14px;
+}
+.main .books .cards .book .name {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .books .cards .book .for-class {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .books .cards .book .year {
+  margin-top: 8px;
+}
+.main .question {
+  margin-bottom: 266px;
+  padding-left: 70px;
+  grid-area: question;
+}
+@media (max-width: 1340px) {
+  .main .question {
+    width: calc(100vw - 108px);
+    padding: 0;
+    margin: 0 auto 90px;
+  }
+}
+@media (max-width: 760px) {
+  .main .question {
+    width: calc(100vw - 20px);
+    margin-bottom: 182px;
+  }
+}
+.main .question .card {
+  padding: 60px 24px;
+  gap: 86px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .main .question .card {
+    gap: 16px;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .main .question .card {
+    padding: 16px;
+    flex-direction: column;
+  }
+}
+.main .question-image {
+  width: 364px;
+  height: 318px;
+  object-fit: cover;
+}
+@media (max-width: 1000px) {
+  .main .question-image {
+    width: 285px;
+    height: 249px;
+  }
+}
+.main .question .wrapper {
+  padding: 16px 0;
+}
+@media (max-width: 1000px) {
+  .main .question .wrapper {
+    padding: 0;
+  }
+}
+.main .question .wrapper .title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  color: #131930;
+}
+@media (max-width: 1000px) {
+  .main .question .wrapper .title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 760px) {
+  .main .question .wrapper .title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.main .question .wrapper .text {
+  width: 400px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #131930;
+}
+@media (max-width: 1000px) {
+  .main .question .wrapper .text {
+    font-size: 12px;
+    width: auto;
+  }
+}
+@media (max-width: 760px) {
+  .main .question .wrapper .text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
 .footer {
   padding: 17px 38px;
   display: flex;
