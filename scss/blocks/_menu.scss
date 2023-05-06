@@ -13,6 +13,14 @@
     max-height: 0;
     transition: max-height 0.9s ease-out;
     overflow: hidden;
+    @include for-915-px {
+        width: 262px;
+    }
+    @include for-760-px {
+        width: 100%;
+        top: 194px;
+        z-index: 2;
+    }
     &.active {
         max-height: 594px;
         padding-bottom: 16px;
@@ -26,8 +34,14 @@
         top: 0;
         left: 260px;
         display: none;
+        @include for-915-px {
+            left: 230px;
+        }
         &.active {
             display: block;
+            @include for-760-px {
+                display: none;
+            }
         }
         &_title {
             font-weight: 600;

@@ -12,6 +12,11 @@
     cursor: pointer;
     transition: background 0.3s ease;
     position: relative;
+    @include for-760-px {
+        width: 280px;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
     &::before {
         content: "";
         border-radius: 8px;
@@ -44,5 +49,8 @@
     justify-content: space-between;
     .img {
         transform: rotate(270deg);
+        @include for-760-px {
+            transform: rotate(0deg);
+        }
     }
 }

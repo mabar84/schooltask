@@ -8,12 +8,25 @@
         position: absolute;
         left: 70px;
         top: 0px;
+        @include for-915-px {
+            left: -33px;
+        }
+        @include for-760-px {
+            width: 290px;
+            height: 220px;
+            top: 10px;
+            left: -27px;
+        }
     }
     .blur {
         height: 154px;
         background: rgba(208, 238, 255, 0.5);
         backdrop-filter: blur(5px);
         border-radius: 0px 0px 32px 0px;
+        @include for-760-px {
+            height: 120px;
+            border-radius: 0;
+        }
     }
     .logo {
         width: 242px;
@@ -21,14 +34,42 @@
         position: absolute;
         left: 70px;
         top: 15px;
+        @include for-1170-px {
+            left: 54px;
+        }
+        @include for-915-px {
+            left: 20px;
+        }
+        @include for-760-px {
+            width: 94px;
+            height: 54px;
+            top: 8px;
+            left: 10px;
+        }
     }
     .search {
         position: absolute;
         right: 70px;
         top: 32px;
+        width: 688px;
+        @include for-1170-px {
+            width: 464px;
+            right: 54px;
+        }
+        @include for-915-px {
+            width: 456px;
+            top: 20px;
+            right: 32px;
+        }
+        @include for-760-px {
+            width: calc(100vw - 20px);
+            right: 10px;
+            left: 10px;
+            top: 70px;
+        }
         &-input {
-            padding: 13px 40px;
-            width: 688px;
+            width: 100%;
+            padding: 13px 40px 13px 20px;
             height: 48px;
             background: rgba(255, 255, 255, 0.5);
             border: 1px solid #131930;
@@ -37,11 +78,20 @@
             font-size: 14px;
             line-height: 22px;
             color: #131930;
+            @include for-760-px {
+                padding: 13px 40px 13px 16px;
+                font-size: 12px;
+                line-height: 18px;
+            }
             &::placeholder {
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
                 color: #131930;
+                @include for-760-px {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
             }
         }
         &-icon {
@@ -60,6 +110,53 @@
             right: 70px;
             bottom: 70px;
             gap: 16px;
+            @include for-1170-px {
+                right: 54px;
+            }
+            @include for-915-px {
+                right: 36px;
+            }
+            @include for-760-px {
+                display: none;
+            }
+            &_mobile {
+                width: 58px;
+                height: 38px;
+                display: none;
+                position: absolute;
+                top: 16px;
+                right: 10px;
+                cursor: pointer;
+                @include for-760-px {
+                    display: block;
+                    z-index: 2;
+                }
+            }
+        }
+        &-menu_mobile {
+            width: 280px;
+            padding: 2px 16px 11px;
+            background: #ffac4e;
+            border-radius: 8px;
+            position: absolute;
+            top: 135px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: none;
+            &.active {
+                display: block;
+            }
+            &-link {
+                padding: 9px 0;
+                text-align: center;
+                display: block;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #ffffff;
+                border-bottom: 1px solid #ffffff;
+            }
         }
         &-button {
             padding: 16px 16px 0;
