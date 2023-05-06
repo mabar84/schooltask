@@ -1,0 +1,81 @@
+.main {
+    // display: flex;
+    // justify-content: space-between;
+    // gap: 24px;
+    display: grid;
+    grid-gap: 24px;
+    //  grid-template-rows: 10vh 1fr;
+    grid-template-columns: 1fr 270px;
+    grid-template-areas:
+        "cards banners"
+        "books banners"
+        "question banners";
+    @include for-1170-px {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "cards"
+            "books"
+            "banners "
+            "question";
+    }
+    .banners {
+        height: 1800px;
+        background: red;
+        grid-area: banners;
+    }
+    .books {
+        min-height: 100px;
+        grid-area: books;
+        background: blue;
+    }
+    .question {
+        grid-area: question;
+
+        min-height: 100px;
+
+        background: lawngreen;
+    }
+    .cards {
+        grid-area: cards;
+
+        background: #000;
+        .card {
+            width: 292px;
+            height: 210px;
+            overflow: hidden;
+            .top {
+                display: flex;
+                gap: 12px;
+            }
+            .text {
+                // display: flex;
+            }
+            .name {
+                padding-top: 10px;
+                margin-bottom: 14px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                color: #4599f9;
+            }
+            .classes {
+                font-size: 14px;
+                line-height: 22px;
+                color: #131930;
+            }
+            .bottom {
+                padding: 22px 16px;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 16px;
+                row-gap: 22px;
+                & a {
+                    width: min-content;
+                }
+            }
+        }
+    }
+    .right {
+    }
+}

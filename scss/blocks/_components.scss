@@ -54,3 +54,23 @@
         }
     }
 }
+.card {
+    background: rgba(208, 238, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 32px;
+}
+.number {
+    width: 30px;
+    height: 36px;
+    padding: 7px;
+    background: #ffa135;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+    &.primary {
+        background: #f8991d;
+    }
+}
