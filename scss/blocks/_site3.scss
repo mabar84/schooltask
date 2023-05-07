@@ -1,0 +1,84 @@
+.site3 {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 270px;
+    grid-template-areas:
+        "left-grid-content banners"
+        "about banners";
+    @include for-1340-px {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left-grid-content"
+            "banners "
+            "about";
+    }
+    .big-book {
+        padding: 24px;
+        margin-bottom: 60px;
+        display: flex;
+        gap: 20px;
+        .image-wrapper {
+            flex-shrink: 0;
+            width: 206px;
+            height: 244px;
+            padding: 8px;
+            background: #cdd8ed;
+            border-radius: 16px;
+            .book-cover {
+                width: 190px;
+                height: 228px;
+                border-radius: 16px;
+                object-fit: cover;
+            }
+        }
+        .right {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: space-between;
+            .name {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .for-class {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .year {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .description {
+                font-size: 16px;
+                line-height: 22px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* количество строк */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.accordion-header {
+    cursor: pointer;
+    &.active {
+        background: aqua; //Тут переворачивать стрелку
+    }
+}
+
+.accordion-content {
+    background: yellow;
+    display: none;
+    &.active {
+        display: block;
+    }
+}

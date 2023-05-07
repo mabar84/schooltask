@@ -5,14 +5,12 @@
     grid-gap: 24px;
     grid-template-columns: 1fr 270px;
     grid-template-areas:
-        "subjects banners"
         "left-grid-content banners"
         "about banners";
     @include for-1340-px {
         grid-gap: 0;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "subjects"
             "left-grid-content"
             "banners "
             "about";
@@ -94,7 +92,6 @@
         }
     }
     .main-title {
-        padding-left: 70px;
         margin-bottom: 32px;
         font-weight: 600;
         font-size: 50px;
@@ -110,6 +107,21 @@
     }
     .books {
         margin-bottom: 30px;
+        .title {
+            margin-bottom: 24px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 42px;
+
+            @include for-1000-px {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @include for-640-px {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
         .cards {
             justify-content: space-between;
         }
@@ -129,7 +141,7 @@
             font-weight: 600;
             font-size: 30px;
             line-height: 42px;
-            color: #131930;
+
             @include for-1000-px {
                 font-size: 24px;
                 line-height: 32px;
@@ -158,7 +170,7 @@
         .text {
             font-size: 17px;
             line-height: 24px;
-            color: #131930;
+
             @include for-1025-px {
                 font-size: 14px;
                 line-height: 22px;
@@ -175,7 +187,7 @@
             margin-bottom: 20px;
             font-size: 17px;
             line-height: 24px;
-            color: #131930;
+
             @include for-1025-px {
                 font-size: 14px;
                 line-height: 22px;

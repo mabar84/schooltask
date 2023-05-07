@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -84,13 +85,14 @@ address {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #131930;
 }
 
 .header {
   position: relative;
   z-index: 1;
   max-width: 1280px;
-  margin: 0 auto 50px;
+  margin: 0 auto 45px;
 }
 .header .bg {
   width: 748px;
@@ -196,7 +198,6 @@ address {
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: #131930;
 }
 @media (max-width: 760px) {
   .header .search-input {
@@ -209,7 +210,6 @@ address {
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: #131930;
 }
 @media (max-width: 760px) {
   .header .search-input::placeholder {
@@ -630,7 +630,6 @@ address {
 .main .subjects .card .classes {
   font-size: 14px;
   line-height: 22px;
-  color: #131930;
 }
 .main .subjects .card .bottom {
   padding: 22px 16px;
@@ -705,7 +704,6 @@ address {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #131930;
 }
 @media (max-width: 1340px) {
   .main .banners .help .title {
@@ -727,7 +725,6 @@ address {
   margin-bottom: 24px;
   font-size: 17px;
   line-height: 24px;
-  color: #131930;
 }
 @media (max-width: 1340px) {
   .main .banners .help .text {
@@ -775,7 +772,6 @@ address {
   font-weight: 600;
   font-size: 30px;
   line-height: 42px;
-  color: #131930;
 }
 .main .books .cards {
   display: flex;
@@ -794,7 +790,6 @@ address {
   max-width: 134px;
   font-size: 12px;
   line-height: 18px;
-  color: #131930;
 }
 .main .books .cards .book .image-wrapper {
   margin-bottom: 16px;
@@ -803,6 +798,8 @@ address {
   padding: 7px 8px;
 }
 .main .books .cards .book .image-wrapper .book-cover {
+  width: 120px;
+  height: 144px;
   object-fit: cover;
   border-radius: 14px;
 }
@@ -866,7 +863,6 @@ address {
   font-weight: 600;
   font-size: 30px;
   line-height: 42px;
-  color: #131930;
 }
 @media (max-width: 1000px) {
   .main .question .wrapper .title {
@@ -884,7 +880,6 @@ address {
   width: 400px;
   font-size: 16px;
   line-height: 22px;
-  color: #131930;
 }
 @media (max-width: 1000px) {
   .main .question .wrapper .text {
@@ -940,7 +935,6 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #131930;
 }
 @media (max-width: 760px) {
   .footer .left {
@@ -1051,19 +1045,104 @@ address {
   z-index: -1;
 }
 
+.regular-search {
+  position: relative;
+}
+.regular-search-input {
+  width: 100%;
+  padding: 13px 40px 13px 20px;
+  height: 48px;
+  background: rgba(208, 238, 255, 0.5);
+  border: 1px solid #131930;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (max-width: 760px) {
+  .regular-search-input {
+    padding: 13px 40px 13px 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.regular-search-input::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (max-width: 760px) {
+  .regular-search-input::placeholder {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.regular-search-icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.el31 {
+  width: 168px;
+  height: 168px;
+  left: 292px;
+  top: 456px;
+  background: #91bfe9;
+  opacity: 0.2;
+}
+
+.el32 {
+  width: 62.25px;
+  height: 62.25px;
+  left: 391px;
+  top: 856px;
+  background: #84a4f9;
+  opacity: 0.4;
+}
+
+.el33 {
+  width: 168px;
+  height: 168px;
+  left: 1268px;
+  top: 2246px;
+  background: #91bfe9;
+  opacity: 0.2;
+}
+
+.el34 {
+  width: 48px;
+  height: 48px;
+  left: 1435px;
+  top: 2604px;
+  background: #e4eafa;
+}
+
+.el35 {
+  width: 62.25px;
+  height: 62.25px;
+  left: 1367px;
+  top: 2646px;
+  background: #84a4f9;
+  opacity: 0.4;
+}
+
 .site2 {
   position: relative;
   overflow: hidden;
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 1fr 270px;
-  grid-template-areas: "subjects banners" "left-grid-content banners" "about banners";
+  grid-template-areas: "left-grid-content banners" "about banners";
 }
 @media (max-width: 1340px) {
   .site2 {
     grid-gap: 0;
     grid-template-columns: 1fr;
-    grid-template-areas: "subjects" "left-grid-content" "banners " "about";
+    grid-template-areas: "left-grid-content" "banners " "about";
   }
 }
 .site2 .el21 {
@@ -1155,7 +1234,6 @@ address {
   }
 }
 .site2 .main-title {
-  padding-left: 70px;
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 50px;
@@ -1175,6 +1253,24 @@ address {
 }
 .site2 .books {
   margin-bottom: 30px;
+}
+.site2 .books .title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+}
+@media (max-width: 1000px) {
+  .site2 .books .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .site2 .books .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 .site2 .books .cards {
   justify-content: space-between;
@@ -1199,7 +1295,6 @@ address {
   font-weight: 600;
   font-size: 30px;
   line-height: 42px;
-  color: #131930;
 }
 @media (max-width: 1000px) {
   .site2 .about .title {
@@ -1236,7 +1331,6 @@ address {
 .site2 .about .text {
   font-size: 17px;
   line-height: 24px;
-  color: #131930;
 }
 @media (max-width: 1025px) {
   .site2 .about .text {
@@ -1257,7 +1351,6 @@ address {
   margin-bottom: 20px;
   font-size: 17px;
   line-height: 24px;
-  color: #131930;
 }
 @media (max-width: 1025px) {
   .site2 .about ul {
@@ -1269,4 +1362,86 @@ address {
   .site2 .about ul {
     margin-left: 15px;
   }
+}
+
+.site3 {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 1fr 270px;
+  grid-template-areas: "left-grid-content banners" "about banners";
+}
+@media (max-width: 1340px) {
+  .site3 {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "left-grid-content" "banners " "about";
+  }
+}
+.site3 .big-book {
+  padding: 24px;
+  margin-bottom: 60px;
+  display: flex;
+  gap: 20px;
+}
+.site3 .big-book .image-wrapper {
+  flex-shrink: 0;
+  width: 206px;
+  height: 244px;
+  padding: 8px;
+  background: #cdd8ed;
+  border-radius: 16px;
+}
+.site3 .big-book .image-wrapper .book-cover {
+  width: 190px;
+  height: 228px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.site3 .big-book .right {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+.site3 .big-book .right .name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.site3 .big-book .right .for-class {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.site3 .big-book .right .year {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.site3 .big-book .right .description {
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accordion-header {
+  cursor: pointer;
+}
+.accordion-header.active {
+  background: aqua;
+}
+
+.accordion-content {
+  background: yellow;
+  display: none;
+}
+.accordion-content.active {
+  display: block;
 }

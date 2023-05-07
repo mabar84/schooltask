@@ -85,3 +85,17 @@ navButtonsMobile.addEventListener("click", () => {
     }
   });
 });
+
+//accordions
+let accordionHeaders = document.querySelectorAll(".accordion-header");
+let accordionContent = document.querySelectorAll(".accordion-content");
+
+// Обходим все заголовки и добавляем на них обработчик клика
+accordionHeaders.forEach(function (header) {
+  header.addEventListener("click", function () {
+    // Получаем блок с содержанием, следующий непосредственно за заголовком
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    content.classList.toggle("active");
+  });
+});

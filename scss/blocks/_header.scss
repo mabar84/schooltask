@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1;
     max-width: 1280px;
-    margin: 0 auto 50px;
+    margin: 0 auto 45px;
     .bg {
         width: 748px;
         height: 217px;
@@ -86,7 +86,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 22px;
-            color: #131930;
+
             @include for-760-px {
                 padding: 13px 40px 13px 16px;
                 font-size: 12px;
@@ -96,7 +96,7 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
-                color: #131930;
+
                 @include for-760-px {
                     font-size: 12px;
                     line-height: 18px;

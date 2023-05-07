@@ -79,3 +79,39 @@
     border-radius: 50%;
     z-index: -1;
 }
+.regular-search {
+    position: relative;
+    &-input {
+        width: 100%;
+        padding: 13px 40px 13px 20px;
+        height: 48px;
+        background: rgba(208, 238, 255, 0.5);
+        border: 1px solid #131930;
+        border-radius: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        @include for-760-px {
+            padding: 13px 40px 13px 16px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &::placeholder {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            @include for-760-px {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+    &-icon {
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+}
