@@ -1,6 +1,17 @@
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    padding-left: 70px;
+    @include for-1340-px {
+        padding-left: 0;
+        width: calc(100vw - 108px);
+    }
+    @include for-1000-px {
+        width: calc(100vw - 40px);
+    }
+    @include for-640-px {
+        width: calc(100vw - 20px);
+    }
 }
 * {
     outline: none;

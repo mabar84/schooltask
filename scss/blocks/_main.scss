@@ -16,7 +16,7 @@
             "banners "
             "question";
     }
-    .el37 {
+    .el11 {
         width: 168px;
         height: 168px;
         position: absolute;
@@ -29,7 +29,7 @@
             left: 62px;
         }
     }
-    .el38 {
+    .el12 {
         position: absolute;
         width: 62.25px;
         height: 62.25px;
@@ -42,7 +42,7 @@
             left: 161px;
         }
     }
-    .el39 {
+    .el13 {
         position: absolute;
         width: 98px;
         height: 98px;
@@ -56,7 +56,6 @@
         }
     }
     .subjects {
-        padding-left: 70px;
         margin-bottom: 60px;
         grid-area: subjects;
         display: flex;
@@ -64,13 +63,8 @@
         column-gap: 20px;
         row-gap: 16px;
         @include for-1340-px {
-            width: calc(100vw - 108px);
-            padding-left: 0;
-            margin: 0 auto 40px;
+            margin-bottom: 40px;
             justify-content: center;
-        }
-        @include for-640-px {
-            width: calc(100vw - 20px);
         }
         .card {
             width: 292px;
@@ -171,6 +165,9 @@
             padding: 0;
             margin: 0 auto 60px;
         }
+        @include for-1000-px {
+            width: calc(100vw - 40px);
+        }
         @include for-760-px {
             width: 301px;
             margin: 0 auto 30px;
@@ -250,20 +247,9 @@
         }
     }
     .books {
-        padding-left: 70px;
         grid-area: books;
         margin-bottom: 60px;
-        @include for-1340-px {
-            width: calc(100vw - 108px);
-            padding-left: 0;
-            margin: 0 auto 60px;
-        }
-        @include for-1000-px {
-            padding: 0 20px;
-        }
         @include for-640-px {
-            width: calc(100vw - 20px);
-            padding: 0;
             margin-bottom: 30px;
         }
         .title {
@@ -316,18 +302,8 @@
         }
     }
     .question {
-        margin-bottom: 266px;
-        padding-left: 70px;
+        margin-bottom: 60px;
         grid-area: question;
-        @include for-1340-px {
-            width: calc(100vw - 108px);
-            padding: 0;
-            margin: 0 auto 90px;
-        }
-        @include for-760-px {
-            width: calc(100vw - 20px);
-            margin-bottom: 182px;
-        }
         .card {
             padding: 60px 24px;
             gap: 86px;

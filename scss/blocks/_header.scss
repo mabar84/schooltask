@@ -1,7 +1,8 @@
 .header {
     position: relative;
     z-index: 1;
-    margin-bottom: 50px;
+    max-width: 1280px;
+    margin: 0 auto 50px;
     .bg {
         width: 748px;
         height: 217px;

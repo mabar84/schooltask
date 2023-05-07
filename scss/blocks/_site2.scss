@@ -1,0 +1,188 @@
+.site2 {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 270px;
+    grid-template-areas:
+        "subjects banners"
+        "left-grid-content banners"
+        "about banners";
+    @include for-1340-px {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "subjects"
+            "left-grid-content"
+            "banners "
+            "about";
+    }
+    .el21 {
+        width: 48px;
+        height: 48px;
+        left: 109px;
+        top: 546px;
+        background: #e4eafa;
+        @include for-1025-px {
+            left: 48px;
+            top: 295px;
+        }
+    }
+    .el22 {
+        width: 62.25px;
+        height: 62.25px;
+        left: -2px;
+        top: 588px;
+        background: #ffe8cd;
+        opacity: 0.5;
+        @include for-1025-px {
+            width: 98px;
+            height: 98px;
+            left: 776px;
+            top: 1050px;
+            background: #e9e091;
+            opacity: 0.2;
+        }
+    }
+    .el23 {
+        width: 168px;
+        height: 168px;
+        left: -11px;
+        top: 646px;
+        background: #cbd7f6;
+        opacity: 0.5;
+        @include for-1025-px {
+            left: -80px;
+            top: 385px;
+            opacity: 0.2;
+        }
+    }
+    .el24 {
+        width: 168px;
+        height: 168px;
+        left: 918px;
+        top: 964px;
+        background: #91bfe9;
+        opacity: 0.2;
+        @include for-1025-px {
+            left: 842px;
+            top: 795px;
+            background: #caf3ee;
+        }
+    }
+    .el25 {
+        width: 48px;
+        height: 48px;
+        left: 1085px;
+        top: 1322px;
+        @include for-1025-px {
+            display: none;
+        }
+    }
+    .el26 {
+        width: 62.25px;
+        height: 62.25px;
+        left: 1017px;
+        top: 1364px;
+        background: #bb9bff;
+        opacity: 0.2;
+        @include for-1025-px {
+            left: 940px;
+            top: 1180px;
+            background: #ff7f68;
+            opacity: 0.4;
+        }
+    }
+    .main-title {
+        padding-left: 70px;
+        margin-bottom: 32px;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 62px;
+        @include for-1000-px {
+            font-size: 40px;
+        }
+        @include for-1000-px {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    .books {
+        margin-bottom: 30px;
+        .cards {
+            justify-content: space-between;
+        }
+    }
+    .about {
+        padding: 32px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        @include for-1000-px {
+            padding: 24px;
+        }
+        @include for-640-px {
+            padding: 16px;
+        }
+        .title {
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 42px;
+            color: #131930;
+            @include for-1000-px {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @include for-640-px {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        .subtitle {
+            width: 484px;
+            margin-top: 20px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            @include for-1025-px {
+                width: 470px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @include for-1000-px {
+                width: auto;
+            }
+        }
+        .text {
+            font-size: 17px;
+            line-height: 24px;
+            color: #131930;
+            @include for-1025-px {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            &:last-child {
+                width: 484px;
+                @include for-1000-px {
+                    width: auto;
+                }
+            }
+        }
+        ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            line-height: 24px;
+            color: #131930;
+            @include for-1025-px {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @include for-1000-px {
+                margin-left: 15px;
+            }
+        }
+    }
+}

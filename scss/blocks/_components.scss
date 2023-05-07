@@ -74,3 +74,8 @@
         background: #f8991d;
     }
 }
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
