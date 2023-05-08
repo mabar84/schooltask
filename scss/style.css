@@ -1370,13 +1370,13 @@ address {
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 1fr 270px;
-  grid-template-areas: "left-grid-content banners" "about banners";
+  grid-template-areas: "big-book banners" "regular-search banners" "parts banners" "books banners" "rating banners" "vk banners" "about banners";
 }
 @media (max-width: 1340px) {
   .site3 {
     grid-gap: 0;
     grid-template-columns: 1fr;
-    grid-template-areas: "left-grid-content" "banners " "about";
+    grid-template-areas: "big-book" "regular-search" "parts" "books" "rating" "vk" "banners" "about";
   }
 }
 .site3 .big-book {
@@ -1430,18 +1430,94 @@ address {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.accordion-header {
+.site3 .part {
+  margin-bottom: 60px;
+}
+.site3 .part .accordion-header {
+  padding: 16px 41px 16px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(124, 208, 255, 0.6);
+  transition: border-radius 0.9s ease-out;
+  border-radius: 16px;
   cursor: pointer;
 }
-.accordion-header.active {
-  background: aqua;
+.site3 .part .accordion-header.active {
+  border-radius: 16px 16px 0px 0px;
 }
-
-.accordion-content {
-  background: yellow;
-  display: none;
+.site3 .part .accordion-header.active .img {
+  transform: rotate(180deg);
 }
-.accordion-content.active {
-  display: block;
+.site3 .part-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.site3 .part-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(208, 238, 255, 0.5);
+  backdrop-filter: blur(5px);
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  transition: padding 0.7s ease-out;
+  overflow: hidden;
+  border-radius: 0 0 16px 16px;
+}
+.site3 .part-content.active {
+  max-height: max-content;
+  padding: 16px 24px;
+}
+.site3 .exercises .accordion-header {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  transition: border-radius 0.9s ease-out;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.site3 .exercises .accordion-header.active {
+  border-bottom: 1px solid #131930;
+  border-radius: 12px 12px 0px 0px;
+}
+.site3 .exercises .accordion-header.active .img {
+  transform: rotate(180deg);
+}
+.site3 .exercises-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.site3 .exercises-content {
+  background: #ffffff;
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 12px 12px;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  transition: padding 0.7s ease-out;
+  overflow: hidden;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 28px;
+}
+@media (max-width: 640px) {
+  .site3 .exercises-content {
+    column-gap: 20px;
+  }
+}
+.site3 .exercises-content a {
+  width: min-content;
+}
+.site3 .exercises-content.active {
+  max-height: max-content;
+  padding: 18px 22px;
 }
