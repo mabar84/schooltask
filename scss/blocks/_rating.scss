@@ -2,9 +2,16 @@
     display: flex;
     gap: 74px;
     justify-content: space-between;
+    @include for-1000-px {
+        flex-direction: column;
+        gap: 20px;
+    }
     .left {
         padding: 16px 32px;
         display: flex;
+        @include for-1000-px {
+            justify-content: center;
+        }
         .rating-level {
             padding: 10px;
             &_title {
@@ -33,6 +40,9 @@
             height: 100%;
             margin: 0 8px;
             border: 1px solid #ffffff;
+            @include for-1000-px {
+                margin: 0 32px;
+            }
         }
     }
     .right {
@@ -42,11 +52,18 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
+            @include for-1000-px {
+                text-align: center;
+            }
         }
         .social-networks {
             display: flex;
             gap: 10px;
             justify-content: space-between;
+            @include for-1000-px {
+                gap: 32px;
+                justify-content: center;
+            }
             .icon {
                 width: 48px;
                 height: 48px;

@@ -1,8 +1,10 @@
 .site3 {
+    margin-bottom: 60px;
     position: relative;
     overflow: hidden;
     display: grid;
-    grid-gap: 24px;
+    column-gap: 24px;
+    row-gap: 60px;
     grid-template-columns: 1fr 270px;
     grid-template-areas:
         "big-book banners"
@@ -13,7 +15,7 @@
         "vk banners"
         "about banners";
     @include for-1340-px {
-        grid-gap: 0;
+        grid-gap: 60px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "big-book"
@@ -25,11 +27,18 @@
             "banners"
             "about";
     }
+    @include for-1340-px {
+        grid-gap: 40px;
+    }
     .big-book {
         padding: 24px;
-        margin-bottom: 60px;
         display: flex;
         gap: 20px;
+        @include for-640-px {
+            padding: 16px;
+            flex-direction: column;
+            align-items: center;
+        }
         .image-wrapper {
             flex-shrink: 0;
             width: 206px;
@@ -50,15 +59,26 @@
             flex-direction: column;
             gap: 8px;
             justify-content: space-between;
+            @include for-640-px {
+                padding: 0;
+                align-items: center;
+            }
             .name {
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 32px;
+                @include for-640-px {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
             .for-class {
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
+                @include for-640-px {
+                    display: none;
+                }
             }
             .year {
                 font-weight: 400;
@@ -69,15 +89,25 @@
                 font-size: 16px;
                 line-height: 22px;
                 display: -webkit-box;
-                -webkit-line-clamp: 2; /* количество строк */
+                -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                @include for-640-px {
+                    font-size: 14px;
+                    line-height: 22px;
+                    -webkit-line-clamp: 10;
+                    text-align: center;
+                }
             }
         }
     }
+    .parts {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
     .part {
-        margin-bottom: 60px;
         .accordion-header {
             padding: 16px 41px 16px 38px;
             display: flex;
@@ -155,7 +185,11 @@
             flex-wrap: wrap;
             column-gap: 16px;
             row-gap: 28px;
+            @include for-1000-px {
+                justify-content: start;
+            }
             @include for-640-px {
+                justify-content: space-between;
                 column-gap: 20px;
             }
             & a {
@@ -168,18 +202,31 @@
         }
     }
     .books {
+        margin-bottom: 0;
         .cards {
             justify-content: space-between;
         }
     }
     .vk {
         object-fit: cover;
-        margin-bottom: 30px;
+    }
+    .banners {
+        grid-area: banners;
+        @include for-1340-px {
+            width: calc(100vw - 108px);
+            padding: 0;
+            margin: 0 auto;
+        }
+        @include for-1000-px {
+            width: calc(100vw - 40px);
+        }
+        @include for-760-px {
+            width: 301px;
+            margin: 0 auto;
+        }
     }
     .about {
         padding: 32px;
-        margin-top: 30px;
-        margin-bottom: 60px;
         @include for-1000-px {
             padding: 24px;
         }
