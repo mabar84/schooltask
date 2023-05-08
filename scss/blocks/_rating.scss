@@ -1,0 +1,59 @@
+.rating {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    .rate-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        margin-bottom: 10px;
+        margin-left: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: left;
+        text-transform: none;
+    }
+    .rate {
+        align-self: start;
+    }
+    .rate:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+    }
+    .rate:not(:checked) > label {
+        float: right;
+        width: 27px;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 10px;
+        color: #cdcdcd;
+    }
+    .rate > input ~ label {
+        margin-left: 4px;
+        color: #f8991d;
+    }
+    .rate > input:checked ~ label {
+        color: #f8991d;
+        .star-body {
+            fill: #f8991d;
+        }
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #f8991d;
+        .star-body {
+            fill: #f8991d;
+        }
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #f8991d;
+    }
+}

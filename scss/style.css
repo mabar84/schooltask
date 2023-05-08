@@ -1130,6 +1130,67 @@ address {
   opacity: 0.4;
 }
 
+.rating {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.rating .rate-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.rating .title {
+  margin-bottom: 10px;
+  margin-left: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+  text-transform: none;
+}
+.rating .rate {
+  align-self: start;
+}
+.rating .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rating .rate:not(:checked) > label {
+  float: right;
+  width: 27px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 10px;
+  color: #cdcdcd;
+}
+.rating .rate > input ~ label {
+  margin-left: 4px;
+  color: #f8991d;
+}
+.rating .rate > input:checked ~ label {
+  color: #f8991d;
+}
+.rating .rate > input:checked ~ label .star-body {
+  fill: #f8991d;
+}
+.rating .rate:not(:checked) > label:hover,
+.rating .rate:not(:checked) > label:hover ~ label {
+  color: #f8991d;
+}
+.rating .rate:not(:checked) > label:hover .star-body,
+.rating .rate:not(:checked) > label:hover ~ label .star-body {
+  fill: #f8991d;
+}
+.rating .rate > input:checked + label:hover,
+.rating .rate > input:checked + label:hover ~ label,
+.rating .rate > input:checked ~ label:hover,
+.rating .rate > input:checked ~ label:hover ~ label,
+.rating .rate > label:hover ~ input:checked ~ label {
+  color: #f8991d;
+}
+
 .site2 {
   position: relative;
   overflow: hidden;
@@ -1520,4 +1581,126 @@ address {
 .site3 .exercises-content.active {
   max-height: max-content;
   padding: 18px 22px;
+}
+.site3 .books .cards {
+  justify-content: space-between;
+}
+.site3 .rating {
+  display: flex;
+  gap: 74px;
+  justify-content: space-between;
+}
+.site3 .rating .left {
+  padding: 16px 32px;
+}
+.site3 .rating .right {
+  padding: 24px 32px;
+}
+.site3 .rating .right .title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.site3 .rating .right .social-networks {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.site3 .rating .right .social-networks .icon {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+.site3 .vk {
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.site3 .about {
+  padding: 32px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1000px) {
+  .site3 .about {
+    padding: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .site3 .about {
+    padding: 16px;
+  }
+}
+.site3 .about .title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+}
+@media (max-width: 1000px) {
+  .site3 .about .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .site3 .about .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.site3 .about .subtitle {
+  width: 484px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1025px) {
+  .site3 .about .subtitle {
+    width: 470px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  .site3 .about .subtitle {
+    width: auto;
+  }
+}
+.site3 .about .text {
+  font-size: 17px;
+  line-height: 24px;
+}
+@media (max-width: 1025px) {
+  .site3 .about .text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.site3 .about .text:last-child {
+  width: 484px;
+}
+@media (max-width: 1000px) {
+  .site3 .about .text:last-child {
+    width: auto;
+  }
+}
+.site3 .about ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 24px;
+}
+@media (max-width: 1025px) {
+  .site3 .about ul {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  .site3 .about ul {
+    margin-left: 15px;
+  }
 }
