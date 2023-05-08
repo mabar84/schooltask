@@ -9,7 +9,7 @@
         "regular-search banners"
         "parts banners"
         "books banners"
-        "rating banners"
+        "rating-soc banners"
         "vk banners"
         "about banners";
     @include for-1340-px {
@@ -20,7 +20,7 @@
             "regular-search"
             "parts"
             "books"
-            "rating"
+            "rating-soc"
             "vk"
             "banners"
             "about";
@@ -170,33 +170,6 @@
     .books {
         .cards {
             justify-content: space-between;
-        }
-    }
-    .rating {
-        display: flex;
-        gap: 74px;
-        justify-content: space-between;
-        .left {
-            padding: 16px 32px;
-        }
-        .right {
-            padding: 24px 32px;
-            .title {
-                margin-bottom: 10px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 24px;
-            }
-            .social-networks {
-                display: flex;
-                gap: 10px;
-                justify-content: space-between;
-                .icon {
-                    width: 48px;
-                    height: 48px;
-                    object-fit: cover;
-                }
-            }
         }
     }
     .vk {

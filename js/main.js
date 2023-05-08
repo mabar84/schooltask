@@ -96,3 +96,16 @@ accordionHeaders.forEach(function (header) {
     this.nextElementSibling.classList.toggle("active");
   });
 });
+
+//rating
+document.getElementById("rating").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.closest("label")) {
+    const label = e.target.closest("label");
+    const name = "." + label.getAttribute("for");
+    this.querySelector(name).checked = true;
+    const selectedRating = name[6];
+
+    console.log("block has value ", selectedRating);
+  }
+});

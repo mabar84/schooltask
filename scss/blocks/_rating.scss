@@ -1,22 +1,71 @@
-.rating {
-    margin-bottom: 40px;
+.rating-soc {
     display: flex;
+    gap: 74px;
     justify-content: space-between;
+    .left {
+        padding: 16px 32px;
+        display: flex;
+        .rating-level {
+            padding: 10px;
+            &_title {
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &_wrapper {
+                display: flex;
+                gap: 10px;
+            }
+            &_number {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 42px;
+            }
+            &_img {
+                width: 49px;
+                height: 41px;
+                object-fit: cover;
+            }
+        }
+        .white-hr {
+            width: 1px;
+            height: 100%;
+            margin: 0 8px;
+            border: 1px solid #ffffff;
+        }
+    }
+    .right {
+        padding: 24px 32px;
+        .title {
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .social-networks {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            .icon {
+                width: 48px;
+                height: 48px;
+                object-fit: cover;
+            }
+        }
+    }
     .rate-wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
-    .title {
-        margin-bottom: 10px;
-        margin-left: 4px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: left;
-        text-transform: none;
+    .subtitle {
+        margin-bottom: 11px;
+        font-size: 12px;
+        line-height: 18px;
     }
     .rate {
+        padding-left: 10px;
         align-self: start;
     }
     .rate:not(:checked) > input {
@@ -29,22 +78,17 @@
         overflow: hidden;
         white-space: nowrap;
         cursor: pointer;
-        font-size: 10px;
-        color: #cdcdcd;
     }
     .rate > input ~ label {
-        margin-left: 4px;
-        color: #f8991d;
+        margin: 0 6px;
     }
     .rate > input:checked ~ label {
-        color: #f8991d;
         .star-body {
             fill: #f8991d;
         }
     }
     .rate:not(:checked) > label:hover,
     .rate:not(:checked) > label:hover ~ label {
-        color: #f8991d;
         .star-body {
             fill: #f8991d;
         }
@@ -54,6 +98,8 @@
     .rate > input:checked ~ label:hover,
     .rate > input:checked ~ label:hover ~ label,
     .rate > label:hover ~ input:checked ~ label {
-        color: #f8991d;
+        .star-body {
+            fill: #f8991d;
+        }
     }
 }

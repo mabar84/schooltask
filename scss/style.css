@@ -1130,65 +1130,104 @@ address {
   opacity: 0.4;
 }
 
-.rating {
-  margin-bottom: 40px;
+.rating-soc {
   display: flex;
+  gap: 74px;
   justify-content: space-between;
 }
-.rating .rate-wrapper {
+.rating-soc .left {
+  padding: 16px 32px;
+  display: flex;
+}
+.rating-soc .left .rating-level {
+  padding: 10px;
+}
+.rating-soc .left .rating-level_title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.rating-soc .left .rating-level_wrapper {
+  display: flex;
+  gap: 10px;
+}
+.rating-soc .left .rating-level_number {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+}
+.rating-soc .left .rating-level_img {
+  width: 49px;
+  height: 41px;
+  object-fit: cover;
+}
+.rating-soc .left .white-hr {
+  width: 1px;
+  height: 100%;
+  margin: 0 8px;
+  border: 1px solid #ffffff;
+}
+.rating-soc .right {
+  padding: 24px 32px;
+}
+.rating-soc .right .title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.rating-soc .right .social-networks {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.rating-soc .right .social-networks .icon {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+.rating-soc .rate-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.rating .title {
-  margin-bottom: 10px;
-  margin-left: 4px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: left;
-  text-transform: none;
+.rating-soc .subtitle {
+  margin-bottom: 11px;
+  font-size: 12px;
+  line-height: 18px;
 }
-.rating .rate {
+.rating-soc .rate {
+  padding-left: 10px;
   align-self: start;
 }
-.rating .rate:not(:checked) > input {
+.rating-soc .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
-.rating .rate:not(:checked) > label {
+.rating-soc .rate:not(:checked) > label {
   float: right;
   width: 27px;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 10px;
-  color: #cdcdcd;
 }
-.rating .rate > input ~ label {
-  margin-left: 4px;
-  color: #f8991d;
+.rating-soc .rate > input ~ label {
+  margin: 0 6px;
 }
-.rating .rate > input:checked ~ label {
-  color: #f8991d;
-}
-.rating .rate > input:checked ~ label .star-body {
+.rating-soc .rate > input:checked ~ label .star-body {
   fill: #f8991d;
 }
-.rating .rate:not(:checked) > label:hover,
-.rating .rate:not(:checked) > label:hover ~ label {
-  color: #f8991d;
-}
-.rating .rate:not(:checked) > label:hover .star-body,
-.rating .rate:not(:checked) > label:hover ~ label .star-body {
+.rating-soc .rate:not(:checked) > label:hover .star-body,
+.rating-soc .rate:not(:checked) > label:hover ~ label .star-body {
   fill: #f8991d;
 }
-.rating .rate > input:checked + label:hover,
-.rating .rate > input:checked + label:hover ~ label,
-.rating .rate > input:checked ~ label:hover,
-.rating .rate > input:checked ~ label:hover ~ label,
-.rating .rate > label:hover ~ input:checked ~ label {
-  color: #f8991d;
+.rating-soc .rate > input:checked + label:hover .star-body,
+.rating-soc .rate > input:checked + label:hover ~ label .star-body,
+.rating-soc .rate > input:checked ~ label:hover .star-body,
+.rating-soc .rate > input:checked ~ label:hover ~ label .star-body,
+.rating-soc .rate > label:hover ~ input:checked ~ label .star-body {
+  fill: #f8991d;
 }
 
 .site2 {
@@ -1431,13 +1470,13 @@ address {
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 1fr 270px;
-  grid-template-areas: "big-book banners" "regular-search banners" "parts banners" "books banners" "rating banners" "vk banners" "about banners";
+  grid-template-areas: "big-book banners" "regular-search banners" "parts banners" "books banners" "rating-soc banners" "vk banners" "about banners";
 }
 @media (max-width: 1340px) {
   .site3 {
     grid-gap: 0;
     grid-template-columns: 1fr;
-    grid-template-areas: "big-book" "regular-search" "parts" "books" "rating" "vk" "banners" "about";
+    grid-template-areas: "big-book" "regular-search" "parts" "books" "rating-soc" "vk" "banners" "about";
   }
 }
 .site3 .big-book {
@@ -1584,33 +1623,6 @@ address {
 }
 .site3 .books .cards {
   justify-content: space-between;
-}
-.site3 .rating {
-  display: flex;
-  gap: 74px;
-  justify-content: space-between;
-}
-.site3 .rating .left {
-  padding: 16px 32px;
-}
-.site3 .rating .right {
-  padding: 24px 32px;
-}
-.site3 .rating .right .title {
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-}
-.site3 .rating .right .social-networks {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-}
-.site3 .rating .right .social-networks .icon {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
 }
 .site3 .vk {
   object-fit: cover;
