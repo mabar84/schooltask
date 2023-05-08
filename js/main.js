@@ -86,26 +86,55 @@ navButtonsMobile.addEventListener("click", () => {
   });
 });
 
-//accordions
+//accordions PC
 let accordionHeaders = document.querySelectorAll(".accordion-header");
-
-accordionHeaders.forEach(function (header) {
-  header.addEventListener("click", function () {
-    // Получаем блок с содержанием, следующий непосредственно за заголовком
-    this.classList.toggle("active");
-    this.nextElementSibling.classList.toggle("active");
+if (accordionHeaders) {
+  accordionHeaders.forEach(function (header) {
+    header.addEventListener("click", function () {
+      // Получаем блок с содержанием, следующий непосредственно за заголовком
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("active");
+    });
   });
-});
+}
+
+//accordion mobile menu
+let mobileAccordionHeaders = document.querySelectorAll(".mobile-accordion-header");
+let mobileAccordionContent = document.querySelectorAll(".mobile-accordion-content");
+if (mobileAccordionHeaders) {
+  mobileAccordionHeaders.forEach(function (header) {
+    header.addEventListener("click", function () {
+      mobileAccordionHeaders.forEach(function (item) {
+        if (item !== this) {
+          item.classList.remove("active");
+        }
+      });
+
+      mobileAccordionContent.forEach(function (item) {
+        if (item !== this.nextElementSibling) {
+          item.classList.remove("active");
+        }
+      });
+
+      // Получаем блок с содержанием, следующий непосредственно за заголовком
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("active");
+    });
+  });
+}
 
 //rating
-document.getElementById("rating").addEventListener("click", function (e) {
-  e.preventDefault();
-  if (e.target.closest("label")) {
-    const label = e.target.closest("label");
-    const name = "." + label.getAttribute("for");
-    this.querySelector(name).checked = true;
-    const selectedRating = name[6];
+const rating = document.getElementById("rating");
+if (rating) {
+  rating.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (e.target.closest("label")) {
+      const label = e.target.closest("label");
+      const name = "." + label.getAttribute("for");
+      this.querySelector(name).checked = true;
+      const selectedRating = name[6];
 
-    console.log("block has value ", selectedRating);
-  }
-});
+      console.log("block has value ", selectedRating);
+    }
+  });
+}

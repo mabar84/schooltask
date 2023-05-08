@@ -412,6 +412,11 @@ address {
   max-height: 594px;
   padding-bottom: 16px;
 }
+@media (max-width: 640px) {
+  .menu.active {
+    max-height: max-content;
+  }
+}
 .menu-additional {
   width: 200px;
   padding: 11px 16px;
@@ -476,6 +481,39 @@ address {
 .menu-additional_06, .menu-additional_07, .menu-additional_08, .menu-additional_09, .menu-additional_10, .menu-additional_11 {
   top: auto;
   bottom: -561px;
+}
+
+.mobile-accordion-header {
+  transition: border-radius 0.9s ease-out;
+  border-radius: 8px;
+}
+.mobile-accordion-header.active {
+  border-radius: 8px 8px 0px 0px;
+}
+.mobile-accordion-header.active .img {
+  transform: rotate(180deg);
+}
+
+.mobile-accordion-content {
+  width: 280px;
+  margin-top: -10px;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background: #ffac4e;
+  border-radius: 0px 0px 8px 8px;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  transition: padding 0.7s ease-out;
+  overflow: hidden;
+}
+.mobile-accordion-content.active {
+  max-height: max-content;
+  padding: 9px 0;
 }
 
 .main {
@@ -986,8 +1024,16 @@ address {
   border-radius: 8px;
   position: absolute;
 }
+.class-select.active::before {
+  background: rgba(255, 255, 255, 0.12);
+}
 .class-select:hover {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 640px) {
+  .class-select:hover {
+    box-shadow: none;
+  }
 }
 .class-select:hover::before {
   background: rgba(255, 255, 255, 0.08);
@@ -1006,6 +1052,11 @@ address {
 .class-select_item {
   padding: 10px 26px 10px 20px;
   justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .class-select_item {
+    padding: 10px 20px;
+  }
 }
 .class-select_item .img {
   transform: rotate(270deg);

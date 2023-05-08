@@ -24,6 +24,9 @@
     &.active {
         max-height: 594px;
         padding-bottom: 16px;
+        @include for-640-px {
+            max-height: max-content;
+        }
     }
     &-additional {
         width: 200px;
