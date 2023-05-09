@@ -1,0 +1,113 @@
+.site5 {
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 60px;
+    grid-template-columns: 1fr 270px;
+    grid-template-areas:
+        "left-grid-content banners"
+        "links banners"
+        "parts banners"
+        "parts banners"
+        "about banners";
+    @include for-1340-px {
+        grid-gap: 60px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left-grid-content"
+            "links"
+            "parts"
+            "parts"
+            "banners"
+            "about";
+    }
+    @include for-1000-px {
+        grid-gap: 40px;
+    }
+    @include for-640-px {
+        grid-gap: 30px;
+    }
+    .main-title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 62px;
+        margin-bottom: 24px;
+        @include for-1000-px {
+            font-size: 40px;
+            line-height: 62px;
+        }
+        @include for-640-px {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    .block-title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 42px;
+        @include for-1000-px {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        @include for-640-px {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    .links {
+        &-wrapper {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            .number {
+                padding: 10px 20px;
+                width: max-content;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .parts {
+        gap: 24px;
+        .block-title {
+            margin-bottom: 0;
+        }
+        .part {
+            &-link {
+                width: 100%;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #ffffff;
+                border-radius: 12px;
+                &:hover {
+                    .part-link_img {
+                        margin-right: 7px;
+                    }
+                }
+                &_text {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                &_img {
+                    transition: 0.5s;
+
+                    transform: rotate(270deg);
+                }
+            }
+        }
+    }
+    .about {
+        .subtitle {
+            width: 100%;
+        }
+        .text:last-child {
+            width: 100%;
+        }
+    }
+}

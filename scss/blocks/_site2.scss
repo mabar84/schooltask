@@ -2,7 +2,8 @@
     position: relative;
     overflow: hidden;
     display: grid;
-    grid-gap: 24px;
+    column-gap: 24px;
+    row-gap: 60px;
     grid-template-columns: 1fr 270px;
     grid-template-areas:
         "left-grid-content banners"
@@ -14,6 +15,12 @@
             "left-grid-content"
             "banners "
             "about";
+    }
+    @include for-1000-px {
+        grid-gap: 40px;
+    }
+    @include for-640-px {
+        grid-gap: 30px;
     }
     .el21 {
         width: 48px;
