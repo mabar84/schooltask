@@ -1458,6 +1458,37 @@ address {
 .about {
   padding: 32px;
 }
+.about .wrapper {
+  padding: 16px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.about .wrapper .title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (max-width: 640px) {
+  .about .wrapper .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.about .wrapper .text {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+}
+.about .wrapper .text:last-child {
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .about .wrapper .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 1000px) {
   .about {
     padding: 24px;
@@ -2073,4 +2104,241 @@ address {
 }
 .site5 .about .text:last-child {
   width: 100%;
+}
+
+.site6 {
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  column-gap: 24px;
+  row-gap: 60px;
+  grid-template-columns: 1fr 270px;
+  grid-template-areas: "card banners" "plan banners" "about banners" "teacher banners" "part banners" "rating-soc banners" "vk banners" "about2 banners";
+}
+@media (max-width: 1340px) {
+  .site6 {
+    grid-gap: 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "card" "plan" "about" "teacher" "part" "rating-soc" "vk" "banners" "about2";
+  }
+}
+@media (max-width: 1000px) {
+  .site6 {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .site6 {
+    grid-gap: 30px;
+  }
+}
+.site6 .title-board {
+  padding: 32px;
+  background: rgba(208, 238, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 24px;
+}
+@media (max-width: 640px) {
+  .site6 .title-board {
+    padding: 16px;
+  }
+}
+.site6 .title-board .main-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .site6 .title-board .main-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 640px) {
+  .site6 .title-board .main-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.site6 .title-board .block-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .site6 .title-board .block-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .site6 .title-board .block-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.site6 .plan {
+  padding-left: 20px;
+}
+.site6 .plan .title {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+}
+@media (max-width: 1000px) {
+  .site6 .plan .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .site6 .plan .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.site6 .plan ol {
+  padding-left: 20px;
+}
+.site6 .plan ol li {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 24px;
+}
+@media (max-width: 1025px) {
+  .site6 .plan ol li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  .site6 .plan ol li {
+    margin-left: 15px;
+  }
+}
+.site6 .teacher {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 760px) {
+  .site6 .teacher {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}
+.site6 .teacher-img {
+  width: 88px;
+  height: 100px;
+  border: 0.318px solid #ffffff;
+  border-radius: 8.48px;
+  object-fit: cover;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.site6 .teacher .wrapper {
+  height: min-content;
+}
+.site6 .teacher .title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (max-width: 1000px) {
+  .site6 .teacher .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 760px) {
+  .site6 .teacher .title {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+}
+.site6 .teacher .name {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1000px) {
+  .site6 .teacher .name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .site6 .teacher .name {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+}
+.site6 .teacher .expirience {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1000px) {
+  .site6 .teacher .expirience {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .site6 .teacher .expirience {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+}
+.site6 .part {
+  padding: 32px;
+}
+@media (max-width: 760px) {
+  .site6 .part {
+    padding: 16px;
+  }
+}
+.site6 .part .title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (max-width: 640px) {
+  .site6 .part .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.site6 .part-content {
+  max-height: max-content;
+}
+.site6 .part-link {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.site6 .part-link:hover .part-link_img {
+  margin-right: 7px;
+}
+.site6 .part-link_text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.site6 .part-link_img {
+  transition: 0.5s;
+  transform: rotate(270deg);
 }

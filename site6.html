@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <title>schooltask6</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/bg-header-svg.svg" alt="x" class="bg" />
+      <img src="img/bg-header-svg-mobile.svg" alt="x" class="bg-mobile" />
+      <div class="blur"></div>
+      <div class="search">
+        <input type="text" id="header-search_input" class="search-input" placeholder="Поиск по автору" />
+        <img src="img/svgicons/search-icon.svg" alt="icon" class="search-icon" />
+      </div>
+      <img src="img/svgicons/logo.svg" alt="logo" class="logo" />
+      <img src="img/svgicons/nav-buttons_mobile.svg" alt="menu" class="nav-buttons_mobile" />
+
+      <nav class="nav-buttons">
+        <div class="nav-button active">
+          <p class="nav-link">Учебники</p>
+          <div class="nav-marker"></div>
+        </div>
+        <div class="nav-button">
+          <p class="nav-link">Сочинения</p>
+          <div class="nav-marker"></div>
+        </div>
+        <div class="nav-button">
+          <p class="nav-link">Контакты</p>
+          <div class="nav-marker"></div>
+        </div>
+      </nav>
+
+      <nav class="nav-menu_mobile">
+        <a href="#" class="nav-menu_mobile-link">Учебники</a>
+        <a href="#" class="nav-menu_mobile-link">Сочинения</a>
+        <a href="#" class="nav-menu_mobile-link">Контакты</a>
+      </nav>
+      <div class="breadcrumbs-wrapper">
+        <div class="ellipse">
+          <div class="class-select" id="class-select">
+            <span class="text">Выберите класс</span>
+            <img src="img/svgicons/arrow.svg" class="img" alt="v" />
+          </div>
+        </div>
+        <div class="breadcrumbs">
+          <a href="#" class="link"> Главная </a>
+          <span>/</span>
+          <a href="#" class="link"> 1 класс </a>
+          <span>/</span>
+          <a href="#" class="link"> Математика</a>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="class-select class-select_item" for="menu-additional_01">
+          <span class="text">1 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_02">
+          <span class="text">2 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_03">
+          <span class="text">3 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_04">
+          <span class="text">4 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_05">
+          <span class="text">5 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_06">
+          <span class="text">6 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_07">
+          <span class="text">7 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_08">
+          <span class="text">8 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_09">
+          <span class="text">9 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_10">
+          <span class="text">10 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+        <div class="class-select class-select_item" for="menu-additional_11">
+          <span class="text">11 класс</span>
+          <img src="img/svgicons/arrow.svg" class="img" alt=">" />
+        </div>
+      </div>
+      <div class="menu-additional menu-additional_01">
+        <div class="wrapper"></div>
+        <p class="menu-additional_title">1 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_02">
+        <p class="menu-additional_title">2 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_03">
+        <p class="menu-additional_title">3 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_04">
+        <p class="menu-additional_title">4 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_05">
+        <p class="menu-additional_title">5 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_06">
+        <p class="menu-additional_title">6 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_07">
+        <p class="menu-additional_title">7 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_08">
+        <p class="menu-additional_title">8 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_09">
+        <p class="menu-additional_title">9 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_10">
+        <p class="menu-additional_title">10 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Химия</a>
+        <a href="#" class="menu-additional_item">Литература</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+      <div class="menu-additional menu-additional_11">
+        <p class="menu-additional_title">11 Класс</p>
+        <a href="#" class="menu-additional_item">Математика</a>
+        <a href="#" class="menu-additional_item">Русский</a>
+        <a href="#" class="menu-additional_item">Английский</a>
+        <a href="#" class="menu-additional_item">Математика</a>
+      </div>
+    </header>
+    <!-- <div class="circle el31"></div>
+    <div class="circle el32"></div>
+    <div class="circle el33"></div>
+    <div class="circle el34"></div>
+    <div class="circle el35"></div> -->
+
+    <main class="main site6 container">
+      <div class="title-board">
+        <h1 class="main-title">“Муму” главный горой</h1>
+        <h3 class="block-title">Cочинение</h3>
+      </div>
+
+      <div class="plan">
+        <h3 class="title">План сочинения:</h3>
+        <ol>
+          <li>Герасим до и после</li>
+          <li>Русский язык</li>
+          <li>Белорусский язык</li>
+          <li>Английский язык</li>
+        </ol>
+      </div>
+
+      <section class="about card">
+        <div class="wrapper">
+          <h3 class="title">Vorem ipsum dolor sit amet</h3>
+          <p class="text">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur
+            neque. Ut diam quam, semper iaculis
+          </p>
+          <h3 class="title">Vorem ipsum dolor sit amet</h3>
+          <p class="text">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur
+            neque. Ut diam quam, semper iaculis
+          </p>
+          <h3 class="title">Vorem ipsum dolor sit amet</h3>
+          <p class="text">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur
+            neque. Ut diam quam, semper iaculis
+          </p>
+        </div>
+      </section>
+
+      <div class="teacher">
+        <img src="img/teacher.jpeg" alt="teacher" class="teacher-img" />
+        <div class="wrapper">
+          <p class="title">Материал подготовлен с учителем высшей категории</p>
+          <p class="name">Ильина Галина Сергеевна</p>
+          <p class="expirience">Опыт работы учителем 36 лет</p>
+        </div>
+      </div>
+
+      <div class="part card">
+        <h3 class="title">Популярные материалы для 5 класса:</h3>
+        <div class="part-content">
+          <a href="#" class="part-link">
+            <p class="part-link_text">Герасим до и после</p>
+            <img src="img/svgicons/arrow-down-black.svg" alt=">" class="part-link_img" />
+          </a>
+          <a href="#" class="part-link">
+            <p class="part-link_text">5 жизненных советов Герасима</p>
+            <img src="img/svgicons/arrow-down-black.svg" alt=">" class="part-link_img" />
+          </a>
+          <a href="#" class="part-link">
+            <p class="part-link_text">Про собачку</p>
+            <img src="img/svgicons/arrow-down-black.svg" alt=">" class="part-link_img" />
+          </a>
+          <a href="#" class="part-link">
+            <p class="part-link_text">Почему бояри носят чепчик</p>
+            <img src="img/svgicons/arrow-down-black.svg" alt=">" class="part-link_img" />
+          </a>
+        </div>
+      </div>
+
+      <div class="rating-soc">
+        <div class="left card">
+          <div class="rating-level">
+            <p class="rating-level_title">Рейтинг</p>
+            <div class="rating-level_wrapper">
+              <span class="rating-level_number">4,6</span>
+              <img src="img/svgicons/star-group.svg" alt="icon" class="rating-level_img" />
+            </div>
+          </div>
+
+          <div class="white-hr"></div>
+
+          <div class="rate-wrapper">
+            <h3 class="subtitle">Вы можете оценить и написать отзыв</h3>
+            <div id="rating" class="rate">
+              <input type="radio" class="star15" id="star15" name="rate1" value="5" />
+              <label for="star15" title="text">
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="star-body"
+                    d="M12.4322 2.08887C12.9213 1.09798 14.3343 1.09798 14.8234 2.08887L17.4379 7.38549C17.6319 7.77862 18.0068 8.05123 18.4406 8.11464L24.2894 8.96952C25.3826 9.12931 25.8183 10.4731 25.0269 11.244L20.7968 15.364C20.4823 15.6704 20.3388 16.1119 20.413 16.5446L21.411 22.3635C21.5979 23.4528 20.4545 24.2834 19.4763 23.769L14.2484 21.0197C13.8599 20.8154 13.3957 20.8154 13.0072 21.0197L7.7793 23.769C6.80112 24.2834 5.65773 23.4528 5.84455 22.3635L6.84257 16.5446C6.91679 16.1119 6.77323 15.6704 6.45874 15.364L2.22869 11.244C1.43723 10.4731 1.87295 9.12931 2.96617 8.96952L8.81494 8.11464C9.24875 8.05123 9.62366 7.77862 9.81772 7.38549L12.4322 2.08887Z"
+                    fill="none" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.2364 1.49903C12.2146 -0.482754 15.0406 -0.482746 16.0188 1.49903L18.6333 6.79565L24.4821 7.65053C26.6685 7.97011 27.5399 10.6577 25.957 12.1995L21.727 16.3195L22.725 22.1385C23.0986 24.317 20.8118 25.9783 18.8555 24.9495L13.6276 22.2002L8.39972 24.9495C6.44337 25.9783 4.15658 24.317 4.53023 22.1385L5.52825 16.3195L1.29821 12.1995C-0.284711 10.6577 0.586715 7.97011 2.77315 7.65053L8.62193 6.79565L11.2364 1.49903ZM13.6276 2.67936L11.0131 7.97598C10.625 8.76224 9.87521 9.30746 9.0076 9.43428L3.15883 10.2892L7.38887 14.4092C8.01787 15.0219 8.30497 15.9049 8.15654 16.7703L7.15852 22.5893L12.3864 19.84C13.1634 19.4313 14.0918 19.4313 14.8688 19.84L20.0967 22.5893L19.0987 16.7703C18.9503 15.9049 19.2374 15.0219 19.8664 14.4092L24.0964 10.2892L18.2476 9.43428C17.38 9.30746 16.6302 8.76224 16.2421 7.97598L13.6276 2.67936Z"
+                    fill="#F8991D" />
+                </svg>
+              </label>
+              <input type="radio" class="star14" id="star14" name="rate1" value="4" />
+              <label for="star14" title="text">
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="star-body"
+                    d="M12.4322 2.08887C12.9213 1.09798 14.3343 1.09798 14.8234 2.08887L17.4379 7.38549C17.6319 7.77862 18.0068 8.05123 18.4406 8.11464L24.2894 8.96952C25.3826 9.12931 25.8183 10.4731 25.0269 11.244L20.7968 15.364C20.4823 15.6704 20.3388 16.1119 20.413 16.5446L21.411 22.3635C21.5979 23.4528 20.4545 24.2834 19.4763 23.769L14.2484 21.0197C13.8599 20.8154 13.3957 20.8154 13.0072 21.0197L7.7793 23.769C6.80112 24.2834 5.65773 23.4528 5.84455 22.3635L6.84257 16.5446C6.91679 16.1119 6.77323 15.6704 6.45874 15.364L2.22869 11.244C1.43723 10.4731 1.87295 9.12931 2.96617 8.96952L8.81494 8.11464C9.24875 8.05123 9.62366 7.77862 9.81772 7.38549L12.4322 2.08887Z"
+                    fill="none" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.2364 1.49903C12.2146 -0.482754 15.0406 -0.482746 16.0188 1.49903L18.6333 6.79565L24.4821 7.65053C26.6685 7.97011 27.5399 10.6577 25.957 12.1995L21.727 16.3195L22.725 22.1385C23.0986 24.317 20.8118 25.9783 18.8555 24.9495L13.6276 22.2002L8.39972 24.9495C6.44337 25.9783 4.15658 24.317 4.53023 22.1385L5.52825 16.3195L1.29821 12.1995C-0.284711 10.6577 0.586715 7.97011 2.77315 7.65053L8.62193 6.79565L11.2364 1.49903ZM13.6276 2.67936L11.0131 7.97598C10.625 8.76224 9.87521 9.30746 9.0076 9.43428L3.15883 10.2892L7.38887 14.4092C8.01787 15.0219 8.30497 15.9049 8.15654 16.7703L7.15852 22.5893L12.3864 19.84C13.1634 19.4313 14.0918 19.4313 14.8688 19.84L20.0967 22.5893L19.0987 16.7703C18.9503 15.9049 19.2374 15.0219 19.8664 14.4092L24.0964 10.2892L18.2476 9.43428C17.38 9.30746 16.6302 8.76224 16.2421 7.97598L13.6276 2.67936Z"
+                    fill="#F8991D" />
+                </svg>
+              </label>
+              <input type="radio" class="star13" id="star13" name="rate1" value="3" />
+              <label for="star13" title="text">
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="star-body"
+                    d="M12.4322 2.08887C12.9213 1.09798 14.3343 1.09798 14.8234 2.08887L17.4379 7.38549C17.6319 7.77862 18.0068 8.05123 18.4406 8.11464L24.2894 8.96952C25.3826 9.12931 25.8183 10.4731 25.0269 11.244L20.7968 15.364C20.4823 15.6704 20.3388 16.1119 20.413 16.5446L21.411 22.3635C21.5979 23.4528 20.4545 24.2834 19.4763 23.769L14.2484 21.0197C13.8599 20.8154 13.3957 20.8154 13.0072 21.0197L7.7793 23.769C6.80112 24.2834 5.65773 23.4528 5.84455 22.3635L6.84257 16.5446C6.91679 16.1119 6.77323 15.6704 6.45874 15.364L2.22869 11.244C1.43723 10.4731 1.87295 9.12931 2.96617 8.96952L8.81494 8.11464C9.24875 8.05123 9.62366 7.77862 9.81772 7.38549L12.4322 2.08887Z"
+                    fill="none" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.2364 1.49903C12.2146 -0.482754 15.0406 -0.482746 16.0188 1.49903L18.6333 6.79565L24.4821 7.65053C26.6685 7.97011 27.5399 10.6577 25.957 12.1995L21.727 16.3195L22.725 22.1385C23.0986 24.317 20.8118 25.9783 18.8555 24.9495L13.6276 22.2002L8.39972 24.9495C6.44337 25.9783 4.15658 24.317 4.53023 22.1385L5.52825 16.3195L1.29821 12.1995C-0.284711 10.6577 0.586715 7.97011 2.77315 7.65053L8.62193 6.79565L11.2364 1.49903ZM13.6276 2.67936L11.0131 7.97598C10.625 8.76224 9.87521 9.30746 9.0076 9.43428L3.15883 10.2892L7.38887 14.4092C8.01787 15.0219 8.30497 15.9049 8.15654 16.7703L7.15852 22.5893L12.3864 19.84C13.1634 19.4313 14.0918 19.4313 14.8688 19.84L20.0967 22.5893L19.0987 16.7703C18.9503 15.9049 19.2374 15.0219 19.8664 14.4092L24.0964 10.2892L18.2476 9.43428C17.38 9.30746 16.6302 8.76224 16.2421 7.97598L13.6276 2.67936Z"
+                    fill="#F8991D" />
+                </svg>
+              </label>
+              <input type="radio" class="star12" id="star12" name="rate1" value="2" />
+              <label for="star12" title="text">
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="star-body"
+                    d="M12.4322 2.08887C12.9213 1.09798 14.3343 1.09798 14.8234 2.08887L17.4379 7.38549C17.6319 7.77862 18.0068 8.05123 18.4406 8.11464L24.2894 8.96952C25.3826 9.12931 25.8183 10.4731 25.0269 11.244L20.7968 15.364C20.4823 15.6704 20.3388 16.1119 20.413 16.5446L21.411 22.3635C21.5979 23.4528 20.4545 24.2834 19.4763 23.769L14.2484 21.0197C13.8599 20.8154 13.3957 20.8154 13.0072 21.0197L7.7793 23.769C6.80112 24.2834 5.65773 23.4528 5.84455 22.3635L6.84257 16.5446C6.91679 16.1119 6.77323 15.6704 6.45874 15.364L2.22869 11.244C1.43723 10.4731 1.87295 9.12931 2.96617 8.96952L8.81494 8.11464C9.24875 8.05123 9.62366 7.77862 9.81772 7.38549L12.4322 2.08887Z"
+                    fill="none" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.2364 1.49903C12.2146 -0.482754 15.0406 -0.482746 16.0188 1.49903L18.6333 6.79565L24.4821 7.65053C26.6685 7.97011 27.5399 10.6577 25.957 12.1995L21.727 16.3195L22.725 22.1385C23.0986 24.317 20.8118 25.9783 18.8555 24.9495L13.6276 22.2002L8.39972 24.9495C6.44337 25.9783 4.15658 24.317 4.53023 22.1385L5.52825 16.3195L1.29821 12.1995C-0.284711 10.6577 0.586715 7.97011 2.77315 7.65053L8.62193 6.79565L11.2364 1.49903ZM13.6276 2.67936L11.0131 7.97598C10.625 8.76224 9.87521 9.30746 9.0076 9.43428L3.15883 10.2892L7.38887 14.4092C8.01787 15.0219 8.30497 15.9049 8.15654 16.7703L7.15852 22.5893L12.3864 19.84C13.1634 19.4313 14.0918 19.4313 14.8688 19.84L20.0967 22.5893L19.0987 16.7703C18.9503 15.9049 19.2374 15.0219 19.8664 14.4092L24.0964 10.2892L18.2476 9.43428C17.38 9.30746 16.6302 8.76224 16.2421 7.97598L13.6276 2.67936Z"
+                    fill="#F8991D" />
+                </svg>
+              </label>
+              <input type="radio" class="star11" id="star11" name="rate1" value="1" />
+              <label for="star11" title="text">
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="star-body"
+                    d="M12.4322 2.08887C12.9213 1.09798 14.3343 1.09798 14.8234 2.08887L17.4379 7.38549C17.6319 7.77862 18.0068 8.05123 18.4406 8.11464L24.2894 8.96952C25.3826 9.12931 25.8183 10.4731 25.0269 11.244L20.7968 15.364C20.4823 15.6704 20.3388 16.1119 20.413 16.5446L21.411 22.3635C21.5979 23.4528 20.4545 24.2834 19.4763 23.769L14.2484 21.0197C13.8599 20.8154 13.3957 20.8154 13.0072 21.0197L7.7793 23.769C6.80112 24.2834 5.65773 23.4528 5.84455 22.3635L6.84257 16.5446C6.91679 16.1119 6.77323 15.6704 6.45874 15.364L2.22869 11.244C1.43723 10.4731 1.87295 9.12931 2.96617 8.96952L8.81494 8.11464C9.24875 8.05123 9.62366 7.77862 9.81772 7.38549L12.4322 2.08887Z"
+                    fill="none" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.2364 1.49903C12.2146 -0.482754 15.0406 -0.482746 16.0188 1.49903L18.6333 6.79565L24.4821 7.65053C26.6685 7.97011 27.5399 10.6577 25.957 12.1995L21.727 16.3195L22.725 22.1385C23.0986 24.317 20.8118 25.9783 18.8555 24.9495L13.6276 22.2002L8.39972 24.9495C6.44337 25.9783 4.15658 24.317 4.53023 22.1385L5.52825 16.3195L1.29821 12.1995C-0.284711 10.6577 0.586715 7.97011 2.77315 7.65053L8.62193 6.79565L11.2364 1.49903ZM13.6276 2.67936L11.0131 7.97598C10.625 8.76224 9.87521 9.30746 9.0076 9.43428L3.15883 10.2892L7.38887 14.4092C8.01787 15.0219 8.30497 15.9049 8.15654 16.7703L7.15852 22.5893L12.3864 19.84C13.1634 19.4313 14.0918 19.4313 14.8688 19.84L20.0967 22.5893L19.0987 16.7703C18.9503 15.9049 19.2374 15.0219 19.8664 14.4092L24.0964 10.2892L18.2476 9.43428C17.38 9.30746 16.6302 8.76224 16.2421 7.97598L13.6276 2.67936Z"
+                    fill="#F8991D" />
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="right card">
+          <p class="title">Делитесь проектом в соцсетях</p>
+          <div class="social-networks">
+            <img src="img/svgicons/vk.svg" alt="icon" class="icon" />
+            <img src="img/svgicons/ok.svg" alt="icon" class="icon" />
+            <img src="img/svgicons/tme.svg" alt="icon" class="icon" />
+            <img src="img/svgicons/ya.svg" alt="icon" class="icon" />
+            <img src="img/svgicons/tik-tok.svg" alt="icon" class="icon" />
+            <img src="img/svgicons/viber.svg" alt="icon" class="icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="vk">
+        <img src="img/vk.png" alt="vk" class="vk-img" />
+      </div>
+
+      <section class="banners">
+        <div class="help card">
+          <div class="wrapper">
+            <p class="title">Помоги проекту!</p>
+            <p class="text">Есть сочинение? Пришли&nbsp;его&nbsp;нам&nbsp;и&nbsp;мы его опубликуем!</p>
+          </div>
+          <a href="#" class="send">Прислать</a>
+        </div>
+      </section>
+
+      <section class="about about2 card">
+        <h3 class="title">О сборниках</h3>
+        <p class="text">
+          Сборники готовых домашних заданий станут хорошим подспорьем в учебе и помогут родителям контролировать успеваемость ребенка. Решебник можно
+          использовать для самопроверки или поиска ошибок с их последующим разбором. С помощью такой книги школьник сможет своевременно устранить возникающие
+          пробелы в знаниях и подтянуть слабые дисциплины, что является залогом дальнейшей успешной учебы.
+        </p>
+        <p class="text">ГДЗ содержит ответы на задания из учебников, рабочих тетрадей, утвержденных для школьной программы.</p>
+
+        <h4 class="subtitle">Доступны сборники готовых решений по следующим дисциплинам:</h4>
+        <ul>
+          <li>Математика</li>
+          <li>Русский язык</li>
+          <li>Белорусский язык</li>
+          <li>Английский язык</li>
+        </ul>
+
+        <p class="text">
+          В книгах собраны правильные ответы на задачи учебных материалов. В&nbsp;некоторых дается детальное пояснение решения, что облегчает поиск ошибки и ее
+          объяснение
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="left">
+        <p>© ️2023 schooltask.ru</p>
+        <p>Копирование материалов запрещено</p>
+      </div>
+      <div class="right">
+        <a href="#">О проекте</a>
+        <a href="#">Политика конфидециальности</a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
