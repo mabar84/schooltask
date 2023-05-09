@@ -531,6 +531,16 @@ address {
     grid-template-areas: "subjects" "books" "banners " "question";
   }
 }
+@media (max-width: 1000px) {
+  .main {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    grid-gap: 30px;
+  }
+}
 .main .el11 {
   width: 168px;
   height: 168px;
@@ -1536,6 +1546,16 @@ address {
     grid-gap: 0;
     grid-template-columns: 1fr;
     grid-template-areas: "left-grid-content" "banners " "about";
+  }
+}
+@media (max-width: 1000px) {
+  .site2 {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .site2 {
+    grid-gap: 30px;
   }
 }
 .site2 .el21 {

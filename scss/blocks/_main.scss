@@ -17,6 +17,12 @@
             "banners "
             "question";
     }
+    @include for-1000-px {
+        grid-gap: 40px;
+    }
+    @include for-640-px {
+        grid-gap: 30px;
+    }
     .el11 {
         width: 168px;
         height: 168px;
