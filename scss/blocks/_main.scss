@@ -8,13 +8,19 @@
         "books banners"
         "question banners";
     @include for-1340-px {
-        grid-gap: 0;
+        grid-gap: 60px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "subjects"
             "books"
             "banners "
             "question";
+    }
+    @include for-1000-px {
+        grid-gap: 40px;
+    }
+    @include for-640-px {
+        grid-gap: 30px;
     }
     .el11 {
         width: 168px;
@@ -56,14 +62,12 @@
         }
     }
     .subjects {
-        margin-bottom: 60px;
         grid-area: subjects;
         display: flex;
         flex-wrap: wrap;
         column-gap: 20px;
         row-gap: 16px;
         @include for-1340-px {
-            margin-bottom: 40px;
             justify-content: center;
         }
         .card {
@@ -158,7 +162,6 @@
         }
     }
     .question {
-        margin-bottom: 60px;
         grid-area: question;
         .card {
             padding: 60px 24px;

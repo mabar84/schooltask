@@ -1,6 +1,6 @@
 .footer {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 60px auto 0;
     padding: 17px 38px;
     display: flex;
     align-items: center;
@@ -9,8 +9,14 @@
     backdrop-filter: blur(5px);
     border-radius: 32px 32px 0px 0px;
     gap: 8px;
+    @include for-1340-px {
+        margin-top: 60px;
+    }
     @include for-1170-px {
         padding: 17px 54px;
+    }
+    @include for-1000-px {
+        padding-top: 40px;
     }
     @include for-760-px {
         padding: 10px 21px;
@@ -19,6 +25,9 @@
         & a {
             width: max-content;
         }
+    }
+    @include for-640-px {
+        padding-top: 30px;
     }
     & p,
     & a {

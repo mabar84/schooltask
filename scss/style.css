@@ -525,9 +525,19 @@ address {
 }
 @media (max-width: 1340px) {
   .main {
-    grid-gap: 0;
+    grid-gap: 60px;
     grid-template-columns: 1fr;
     grid-template-areas: "subjects" "books" "banners " "question";
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    grid-gap: 30px;
   }
 }
 .main .el11 {
@@ -576,7 +586,6 @@ address {
   }
 }
 .main .subjects {
-  margin-bottom: 60px;
   grid-area: subjects;
   display: flex;
   flex-wrap: wrap;
@@ -585,7 +594,6 @@ address {
 }
 @media (max-width: 1340px) {
   .main .subjects {
-    margin-bottom: 40px;
     justify-content: center;
   }
 }
@@ -684,7 +692,6 @@ address {
   width: min-content;
 }
 .main .question {
-  margin-bottom: 60px;
   grid-area: question;
 }
 .main .question .card {
@@ -762,7 +769,7 @@ address {
 
 .footer {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 60px auto 0;
   padding: 17px 38px;
   display: flex;
   align-items: center;
@@ -772,9 +779,19 @@ address {
   border-radius: 32px 32px 0px 0px;
   gap: 8px;
 }
+@media (max-width: 1340px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
 @media (max-width: 1170px) {
   .footer {
     padding: 17px 54px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer {
+    padding-top: 40px;
   }
 }
 @media (max-width: 760px) {
@@ -785,6 +802,11 @@ address {
   }
   .footer a {
     width: max-content;
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    padding-top: 30px;
   }
 }
 .footer p, .footer a {
@@ -1129,7 +1151,7 @@ address {
 @media (max-width: 760px) {
   .banners {
     width: 301px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
   }
 }
 .banners .help {
@@ -1226,11 +1248,6 @@ address {
 
 .books {
   grid-area: books;
-}
-@media (max-width: 640px) {
-  .books {
-    margin-bottom: 30px;
-  }
 }
 .books .title {
   margin-bottom: 24px;
@@ -1531,7 +1548,7 @@ address {
 }
 @media (max-width: 1340px) {
   .site2 {
-    grid-gap: 0;
+    grid-gap: 60px;
     grid-template-columns: 1fr;
     grid-template-areas: "left-grid-content" "banners " "about";
   }

@@ -1,8 +1,5 @@
 .books {
     grid-area: books;
-    @include for-640-px {
-        margin-bottom: 30px;
-    }
     .title {
         margin-bottom: 24px;
         font-weight: 600;
