@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     display: grid;
+    row-gap: 60px;
     grid-gap: 24px;
     grid-template-columns: 1fr 270px;
     grid-template-areas:

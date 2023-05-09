@@ -518,6 +518,7 @@ address {
 
 .main {
   position: relative;
+  row-gap: 60px;
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 1fr 270px;
@@ -1525,6 +1526,7 @@ address {
   position: relative;
   overflow: hidden;
   display: grid;
+  row-gap: 60px;
   grid-gap: 24px;
   grid-template-columns: 1fr 270px;
   grid-template-areas: "left-grid-content banners" "about banners";
