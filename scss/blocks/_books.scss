@@ -1,0 +1,55 @@
+.books {
+    grid-area: books;
+    @include for-640-px {
+        margin-bottom: 30px;
+    }
+    .title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+        @include for-1025-px {
+            overflow: hidden;
+            height: 302px;
+            justify-content: space-between;
+        }
+        .book {
+            min-width: 134px;
+            max-width: 134px;
+            font-size: 12px;
+            line-height: 18px;
+
+            .image-wrapper {
+                margin-bottom: 16px;
+                background: rgba(124, 208, 255, 0.5);
+                border-radius: 16px;
+                padding: 7px 8px;
+                & .book-cover {
+                    width: 120px;
+                    height: 144px;
+                    object-fit: cover;
+                    border-radius: 14px;
+                }
+            }
+            .name {
+                margin-bottom: 8px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .for-class {
+                margin-bottom: 8px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .year {
+                margin-top: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.site4 {
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 60px;
+    grid-template-columns: 1fr 270px;
+    grid-template-areas:
+        "main-title banners"
+        "answer banners"
+        "regular-search banners"
+        "parts banners"
+        "simple-text banners"
+        "books banners"
+        "rating-soc banners"
+        "vk banners"
+        "about banners";
+    @include for-1340-px {
+        grid-gap: 60px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "main-title"
+            "answer"
+            "regular-search"
+            "parts"
+            "simple-text"
+            "books"
+            "rating-soc"
+            "vk"
+            "banners"
+            "about";
+    }
+    @include for-1000-px {
+        grid-gap: 40px;
+    }
+    @include for-640-px {
+        grid-gap: 30px;
+    }
+    .main-title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 62px;
+        @include for-1000-px {
+            font-size: 40px;
+            line-height: 52px;
+        }
+        @include for-1000-px {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    .answer {
+        padding: 32px;
+        &-img {
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+    .simple-text {
+        padding: 32px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .books {
+        margin-bottom: 0;
+        .cards {
+            justify-content: space-between;
+        }
+    }
+}

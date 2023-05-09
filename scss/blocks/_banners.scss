@@ -1,0 +1,88 @@
+.banners {
+    grid-area: banners;
+    @include for-1340-px {
+        width: calc(100vw - 108px);
+        padding: 0;
+        margin: 0 auto;
+    }
+    @include for-1000-px {
+        width: calc(100vw - 40px);
+    }
+    @include for-760-px {
+        width: 301px;
+        margin: 0 auto 30px;
+    }
+    .help {
+        padding: 32px 16px;
+        @include for-1340-px {
+            padding: 37px 58px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include for-1000-px {
+            padding: 32px 15px;
+            gap: 28px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wrapper {
+            @include for-1340-px {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            @include for-760-px {
+                flex-direction: column;
+                align-items: start;
+                gap: 0;
+            }
+        }
+        .title {
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+
+            @include for-1340-px {
+                margin-bottom: 0;
+            }
+            @include for-1000-px {
+                font-size: 21px;
+            }
+            @include for-760-px {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+        .text {
+            margin-bottom: 24px;
+            font-size: 17px;
+            line-height: 24px;
+
+            @include for-1340-px {
+                margin-bottom: 0;
+            }
+            @include for-1000-px {
+                font-size: 16px;
+            }
+        }
+        .send {
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            color: #ffffff;
+            background: #f8991d;
+            border-radius: 8px;
+            @include for-1000-px {
+                padding: 10px 40px;
+                text-align: center;
+                width: max-content;
+            }
+            @include for-760-px {
+                margin-right: auto;
+            }
+        }
+    }
+}

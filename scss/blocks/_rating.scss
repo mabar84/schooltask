@@ -12,6 +12,10 @@
         @include for-1000-px {
             justify-content: center;
         }
+        @include for-640-px {
+            flex-direction: column;
+            align-items: center;
+        }
         .rating-level {
             padding: 10px;
             &_title {
@@ -19,6 +23,10 @@
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 28px;
+                @include for-640-px {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
             }
             &_wrapper {
                 display: flex;
@@ -43,6 +51,11 @@
             @include for-1000-px {
                 margin: 0 32px;
             }
+            @include for-640-px {
+                width: 225px;
+                height: 1px;
+                margin: 16px 0;
+            }
         }
     }
     .right {
@@ -63,6 +76,9 @@
             @include for-1000-px {
                 gap: 32px;
                 justify-content: center;
+            }
+            @include for-640-px {
+                flex-wrap: wrap;
             }
             .icon {
                 width: 48px;
