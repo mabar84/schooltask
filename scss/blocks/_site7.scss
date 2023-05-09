@@ -1,0 +1,125 @@
+.site7 {
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 60px;
+    grid-template-columns: 1fr 270px;
+    grid-template-areas: "feedback banners";
+    @include for-1340-px {
+        grid-gap: 60px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "feedback"
+            "banners";
+    }
+    @include for-1000-px {
+        grid-gap: 40px;
+    }
+    @include for-640-px {
+        grid-gap: 30px;
+    }
+    .feedback {
+        .title {
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 42px;
+            @include for-1000-px {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @include for-640-px {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        .text {
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            @include for-1000-px {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .card {
+            padding: 32px;
+            @include for-640-px {
+                padding: 24px 16px;
+            }
+            .subtitle {
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                @include for-640-px {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+        &-input {
+            width: 100%;
+            height: 56px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            background: #ffffff;
+            border: 1px solid #131930;
+            border-radius: 16px;
+            &:last-child {
+                margin-bottom: 32px;
+            }
+            &::placeholder {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                @include for-760-px {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+        &-textarea {
+            height: 200px;
+            margin-bottom: 32px;
+            resize: none;
+            @include for-640-px {
+                margin-bottom: 24px;
+            }
+        }
+        .send {
+            height: max-content;
+            width: max-content;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 16px 38px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            border-radius: 16px;
+            &::before {
+                content: "";
+                border-radius: 8px;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                border-radius: 8px;
+                position: absolute;
+            }
+            &:hover {
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                @include for-640-px {
+                    box-shadow: none;
+                }
+                &::before {
+                    background: rgba(255, 255, 255, 0.08);
+                }
+            }
+        }
+    }
+}
