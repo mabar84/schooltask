@@ -100,23 +100,16 @@ if (accordionHeaders) {
 
 //accordion mobile menu
 let mobileAccordionHeaders = document.querySelectorAll(".mobile-accordion-header");
-let mobileAccordionContent = document.querySelectorAll(".mobile-accordion-content");
+// let mobileAccordionContent = document.querySelectorAll(".mobile-accordion-content");
 if (mobileAccordionHeaders) {
   mobileAccordionHeaders.forEach(function (header) {
     header.addEventListener("click", function () {
       mobileAccordionHeaders.forEach(function (item) {
-        if (item !== this) {
+        if (item !== header) {
           item.classList.remove("active");
+          item.nextElementSibling.classList.remove("active");
         }
       });
-
-      mobileAccordionContent.forEach(function (item) {
-        if (item !== this.nextElementSibling) {
-          item.classList.remove("active");
-        }
-      });
-
-      // Получаем блок с содержанием, следующий непосредственно за заголовком
       this.classList.toggle("active");
       this.nextElementSibling.classList.toggle("active");
     });
