@@ -2365,6 +2365,9 @@ address {
   padding: 16px 24px;
 }
 
+.exercises {
+  width: 100%;
+}
 .exercises .accordion-header {
   padding: 10px 20px;
   display: flex;
@@ -2419,6 +2422,7 @@ address {
 .exercises-content.active {
   max-height: max-content;
   padding: 18px 22px;
+  justify-content: start;
 }
 
 .banners {

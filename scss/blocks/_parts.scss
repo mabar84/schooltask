@@ -45,6 +45,7 @@
     }
 }
 .exercises {
+    width: 100%;
     .accordion-header {
         padding: 10px 20px;
         display: flex;
@@ -94,6 +95,7 @@
         &.active {
             max-height: max-content;
             padding: 18px 22px;
+            justify-content: start;
         }
     }
 }

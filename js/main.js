@@ -166,3 +166,46 @@ if (sendData) {
     });
   });
 }
+
+// filter exercises
+const input = document.getElementById("regular-search_input");
+
+if (input) {
+  function filterList() {
+    let items = document.querySelectorAll(".exercises-content a");
+    let filter = input.value.toUpperCase();
+
+    for (let i = 0; i < items.length; i++) {
+      let text = items[i].innerText.toUpperCase();
+      if (text.indexOf(filter) > -1) {
+        items[i].style.display = "";
+        items[i].childNodes[1].style.display = "";
+      } else {
+        items[i].style.display = "none";
+        items[i].childNodes[1].style.display = "none";
+      }
+    }
+  }
+  input.addEventListener("input", filterList);
+}
+
+// filter esse
+const inputEsse = document.getElementById("esse-search_input");
+
+if (inputEsse) {
+  function filterListEsse() {
+    let items = document.querySelectorAll(".part-content a");
+    let filter = inputEsse.value.toUpperCase();
+
+    for (let i = 0; i < items.length; i++) {
+      let text = items[i].childNodes[1].innerText.toUpperCase();
+
+      if (text.indexOf(filter) > -1) {
+        items[i].style.display = "";
+      } else {
+        items[i].style.display = "none";
+      }
+    }
+  }
+  inputEsse.addEventListener("input", filterListEsse);
+}
