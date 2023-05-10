@@ -2,14 +2,18 @@
     transition: border-radius 0.9s ease-out;
     border-radius: 8px;
     &.active {
-        border-radius: 8px 8px 0px 0px;
-        .img {
-            transform: rotate(180deg);
+        @include for-760-px {
+            border-radius: 8px 8px 0px 0px;
+        }
+        @include for-760-px {
+            .img {
+                transform: rotate(180deg);
+            }
         }
     }
 }
 .mobile-accordion-content {
-    // display: none;
+    display: none;
     width: 280px;
     margin-top: -10px;
     padding: 0;
@@ -27,6 +31,9 @@
     overflow: hidden;
     // display: flex;
     // flex-direction: column;
+    @include for-760-px {
+        display: block;
+    }
     &.active {
         max-height: max-content;
         padding: 9px 0;

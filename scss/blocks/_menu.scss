@@ -24,7 +24,7 @@
     &.active {
         max-height: 594px;
         padding-bottom: 16px;
-        @include for-640-px {
+        @include for-760-px {
             max-height: max-content;
         }
     }

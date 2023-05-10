@@ -71,9 +71,10 @@
             right: 32px;
         }
         @include for-760-px {
-            width: calc(100vw - 20px);
+            width: 100%;
+            width: calc(100vw - 30px);
+            // left: 10px;
             right: 10px;
-            left: 10px;
             top: 70px;
         }
         &-input {
@@ -86,7 +87,6 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 22px;
-
             @include for-760-px {
                 padding: 13px 40px 13px 16px;
                 font-size: 12px;
@@ -96,7 +96,6 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
-
                 @include for-760-px {
                     font-size: 12px;
                     line-height: 18px;

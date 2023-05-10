@@ -1,39 +1,1048 @@
+.el11 {
+    width: 168px;
+    height: 168px;
+    left: 292px;
+    top: 456px;
+
+    background: #caf3ee;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 98px;
+        height: 98px;
+        left: -4px;
+        top: 736px;
+
+        background: #e9e091;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: 62px;
+        top: 456px;
+
+        background: #caf3ee;
+        opacity: 0.2;
+    }
+    @include for-640-px {
+    }
+}
+.el12 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 391px;
+    top: 856px;
+
+    background: #ff7f68;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 62px;
+        top: 456px;
+
+        background: #caf3ee;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        width: 98px;
+        height: 98px;
+        left: -4px;
+        top: 736px;
+
+        background: #e9e091;
+        opacity: 0.2;
+    }
+    @include for-640-px {
+    }
+}
+.el13 {
+    width: 98px;
+    height: 98px;
+    left: 226px;
+    top: 736px;
+
+    background: #e9e091;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 161px;
+        top: 856px;
+
+        background: #ff7f68;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 161px;
+        top: 856px;
+
+        background: #ff7f68;
+        opacity: 0.4;
+    }
+    @include for-640-px {
+    }
+}
+.el14 {
+    @include for-1340-px {
+        width: 98px;
+        height: 98px;
+        left: 776px;
+        top: 2069px;
+
+        background: #e9e091;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el15 {
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 842px;
+        top: 1789px;
+
+        background: #caf3ee;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el16 {
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 941px;
+        top: 2189px;
+
+        background: #ff7f68;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+// ///////////////////////////////////////////////////////////
+.el21 {
+    width: 48px;
+    height: 48px;
+    left: 459px;
+    top: 814px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: -62px;
+        top: 626px;
+
+        background: #ffe8cd;
+        opacity: 0.5;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: -62px;
+        top: 626px;
+
+        background: #ffe8cd;
+        opacity: 0.5;
+    }
+    @include for-640-px {
+    }
+}
+.el22 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 348px;
+    top: 856px;
+
+    background: #ffe8cd;
+    opacity: 0.5;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: -71px;
+        top: 684px;
+
+        background: #cbd7f6;
+        opacity: 0.5;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: -71px;
+        top: 684px;
+
+        background: #cbd7f6;
+        opacity: 0.5;
+    }
+    @include for-640-px {
+    }
+}
+.el23 {
+    width: 168px;
+    height: 168px;
+    left: 339px;
+    top: 914px;
+
+    background: #cbd7f6;
+    opacity: 0.5;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 49px;
+        top: 584px;
+        opacity: 1;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 48px;
+        height: 48px;
+        left: 49px;
+        top: 584px;
+
+        background: #e4eafa;
+    }
+    @include for-640-px {
+    }
+}
+.el24 {
+    width: 168px;
+    height: 168px;
+    left: 1268px;
+    top: 1232px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 98px;
+        height: 98px;
+        left: 776px;
+        top: 1369px;
+
+        background: #e9e091;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el25 {
+    width: 48px;
+    height: 48px;
+    left: 1435px;
+    top: 1590px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 842px;
+        top: 1089px;
+
+        background: #caf3ee;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el26 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 1367px;
+    top: 1632px;
+
+    background: #bb9bff;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 941px;
+        top: 1489px;
+
+        background: #ff7f68;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+// ///////////////////////////////////////////////////////////
 .el31 {
     width: 168px;
     height: 168px;
     left: 292px;
     top: 456px;
+
     background: #91bfe9;
     opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 2px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: 2px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-640-px {
+    }
 }
 .el32 {
+    width: 48px;
+    height: 48px;
+    left: 459px;
+    top: 814px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 169px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 48px;
+        height: 48px;
+        left: 169px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-640-px {
+    }
+}
+.el33 {
     width: 62.25px;
     height: 62.25px;
     left: 391px;
     top: 856px;
+
     background: #84a4f9;
     opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 101px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 101px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-640-px {
+    }
 }
-.el33 {
+.el34 {
     width: 168px;
     height: 168px;
     left: 1268px;
     top: 2246px;
+
     background: #91bfe9;
     opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 808px;
+        top: 2927px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
 }
-.el34 {
+.el35 {
     width: 48px;
     height: 48px;
     left: 1435px;
     top: 2604px;
+
     background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 975px;
+        top: 3285px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
 }
-.el35 {
+.el36 {
     width: 62.25px;
     height: 62.25px;
     left: 1367px;
     top: 2646px;
+
     background: #84a4f9;
     opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 907px;
+        top: 3327px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
 }
+// ///////////////////////////////////////////////////////////
+.el41 {
+    width: 168px;
+    height: 168px;
+    left: 292px;
+    top: 456px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 59px;
+        top: 1064px;
+        opacity: 1;
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: -62px;
+        top: 626px;
+
+        background: #ffe8cd;
+        opacity: 0.5;
+    }
+    @include for-640-px {
+    }
+}
+.el42 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 391px;
+    top: 856px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: -71px;
+        top: 684px;
+
+        background: #cbd7f6;
+        opacity: 0.5;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: -71px;
+        top: 684px;
+
+        background: #cbd7f6;
+        opacity: 0.5;
+    }
+    @include for-640-px {
+    }
+}
+.el43 {
+    width: 48px;
+    height: 48px;
+    left: 459px;
+    top: 814px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 49px;
+        top: 584px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 48px;
+        height: 48px;
+        left: 49px;
+        top: 584px;
+
+        background: #e4eafa;
+    }
+    @include for-640-px {
+    }
+}
+.el44 {
+    width: 168px;
+    height: 168px;
+    left: 1268px;
+    top: 2246px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 869.35px;
+        top: 3867.76px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el45 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 1367px;
+    top: 2646px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 847.74px;
+        top: 4262.8px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el46 {
+    width: 48px;
+    height: 48px;
+    left: 1435px;
+    top: 2604px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 928.81px;
+        top: 4244.39px;
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+// ///////////////////////////////////////////////////////////
+.el51 {
+    width: 168px;
+    height: 168px;
+    left: 292px;
+    top: 456px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: -38px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: -38px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-640-px {
+    }
+}
+.el52 {
+    width: 48px;
+    height: 48px;
+    left: 459px;
+    top: 814px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 459px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 48px;
+        height: 48px;
+        left: 459px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-640-px {
+    }
+}
+.el53 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 391px;
+    top: 856px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 61px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 61px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-640-px {
+    }
+}
+.el54 {
+    width: 168px;
+    height: 168px;
+    left: 1268px;
+    top: 2246px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 938px;
+        top: 2246px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el55 {
+    width: 48px;
+    height: 48px;
+    left: 1435px;
+    top: 2604px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 1105px;
+        top: 2604px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el56 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 1367px;
+    top: 2646px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 1037px;
+        top: 2646px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+// ///////////////////////////////////////////////////////////
+.el61 {
+    width: 168px;
+    height: 168px;
+    left: 292px;
+    top: 456px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: -8px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: -8px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-640-px {
+    }
+}
+.el62 {
+    width: 48px;
+    height: 48px;
+    left: 459px;
+    top: 814px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 159px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 48px;
+        height: 48px;
+        left: 159px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-640-px {
+    }
+}
+.el63 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 391px;
+    top: 856px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 91px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 91px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-640-px {
+    }
+}
+.el64 {
+    width: 168px;
+    height: 168px;
+    left: 1268px;
+    top: 2246px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 968px;
+        top: 2246px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el65 {
+    width: 48px;
+    height: 48px;
+    left: 1435px;
+    top: 2604px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 1135px;
+        top: 2604px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el66 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 1367px;
+    top: 2646px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 1067px;
+        top: 2646px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+// ///////////////////////////////////////////////////////////
+.el71 {
+    width: 168px;
+    height: 168px;
+    left: 292px;
+    top: 456px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: -18px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        width: 168px;
+        height: 168px;
+        left: -18px;
+        top: 456px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-640-px {
+    }
+}
+.el72 {
+    width: 48px;
+    height: 48px;
+    left: 459px;
+    top: 814px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 459px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        width: 48px;
+        height: 48px;
+        left: 459px;
+        top: 814px;
+
+        background: #e4eafa;
+    }
+    @include for-640-px {
+    }
+}
+.el73 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 391px;
+    top: 856px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 81px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 81px;
+        top: 856px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-640-px {
+    }
+}
+.el74 {
+    width: 168px;
+    height: 168px;
+    left: 1238px;
+    top: 1076px;
+
+    background: #91bfe9;
+    opacity: 0.2;
+    @include for-1340-px {
+        width: 168px;
+        height: 168px;
+        left: 928px;
+        top: 1076px;
+
+        background: #91bfe9;
+        opacity: 0.2;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el75 {
+    width: 48px;
+    height: 48px;
+    left: 1405px;
+    top: 1434px;
+
+    background: #e4eafa;
+    @include for-1340-px {
+        width: 48px;
+        height: 48px;
+        left: 1095px;
+        top: 1434px;
+
+        background: #e4eafa;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+.el76 {
+    width: 62.25px;
+    height: 62.25px;
+    left: 1337px;
+    top: 1476px;
+
+    background: #84a4f9;
+    opacity: 0.4;
+    @include for-1340-px {
+        width: 62.25px;
+        height: 62.25px;
+        left: 1027px;
+        top: 1476px;
+
+        background: #84a4f9;
+        opacity: 0.4;
+    }
+    @include for-1000-px {
+        display: none;
+    }
+    @include for-640-px {
+    }
+}
+// ///////////////////////////////////////////////////////////

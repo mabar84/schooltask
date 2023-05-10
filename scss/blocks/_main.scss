@@ -10,7 +10,7 @@
         "question banners";
     @include for-1340-px {
         grid-gap: 60px;
-        grid-template-columns: 1fr;
+        grid-template-columns: calc(100vw - 108px);
         grid-template-areas:
             "subjects"
             "books"
@@ -18,9 +18,11 @@
             "question";
     }
     @include for-1000-px {
+        grid-template-columns: calc(100vw - 40px);
         grid-gap: 40px;
     }
     @include for-640-px {
+        grid-template-columns: calc(100vw - 20px);
         grid-gap: 30px;
     }
     .el11 {
