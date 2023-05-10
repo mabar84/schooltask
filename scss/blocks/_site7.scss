@@ -91,15 +91,15 @@
             height: 200px;
             margin-bottom: 0px;
             resize: none;
-            @include for-640-px {
-                margin-bottom: 24px;
-            }
         }
         .error-message {
             margin-bottom: 14px;
             font-size: 12px;
             line-height: 18px;
             color: transparent;
+            @include for-640-px {
+                margin-bottom: 8px;
+            }
             &.error {
                 color: #b70808;
             }
