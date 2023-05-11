@@ -1156,7 +1156,8 @@
     width: 168px;
     height: 168px;
     left: 1238px;
-    top: 1076px;
+    top: 776px;
+    // top: 1076px;
 
     background: #91bfe9;
     opacity: 0.2;
@@ -1176,17 +1177,20 @@
     }
 }
 .el75 {
+    display: none;
     width: 48px;
     height: 48px;
     left: 1405px;
-    top: 1434px;
+    // top: 1434px;
+    top: 534px;
 
     background: #e4eafa;
     @include for-1340-px {
         width: 48px;
         height: 48px;
         left: 1095px;
-        top: 1434px;
+        // top: 1434px;
+        top: 534px;
 
         background: #e4eafa;
     }
@@ -1197,10 +1201,12 @@
     }
 }
 .el76 {
+    display: none;
     width: 62.25px;
     height: 62.25px;
     left: 1337px;
-    top: 1476px;
+    // top: 1476px;
+    top: 576px;
 
     background: #84a4f9;
     opacity: 0.4;
@@ -1208,7 +1214,8 @@
         width: 62.25px;
         height: 62.25px;
         left: 1027px;
-        top: 1476px;
+        // top: 1476px;
+        top: 576px;
 
         background: #84a4f9;
         opacity: 0.4;

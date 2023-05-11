@@ -2256,7 +2256,7 @@ address {
   width: 168px;
   height: 168px;
   left: 1238px;
-  top: 1076px;
+  top: 776px;
   background: #91bfe9;
   opacity: 0.2;
 }
@@ -2276,10 +2276,11 @@ address {
   }
 }
 .el75 {
+  display: none;
   width: 48px;
   height: 48px;
   left: 1405px;
-  top: 1434px;
+  top: 534px;
   background: #e4eafa;
 }
 @media (max-width: 1340px) {
@@ -2287,7 +2288,7 @@ address {
     width: 48px;
     height: 48px;
     left: 1095px;
-    top: 1434px;
+    top: 534px;
     background: #e4eafa;
   }
 }
@@ -2297,10 +2298,11 @@ address {
   }
 }
 .el76 {
+  display: none;
   width: 62.25px;
   height: 62.25px;
   left: 1337px;
-  top: 1476px;
+  top: 576px;
   background: #84a4f9;
   opacity: 0.4;
 }
@@ -2309,7 +2311,7 @@ address {
     width: 62.25px;
     height: 62.25px;
     left: 1027px;
-    top: 1476px;
+    top: 576px;
     background: #84a4f9;
     opacity: 0.4;
   }
