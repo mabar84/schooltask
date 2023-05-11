@@ -142,15 +142,6 @@
     @include for-1000-px {
         display: none;
     }
-    @include for-640-px {
-        width: 168px;
-        height: 168px;
-        left: 252px;
-        top: 1789px;
-        display: block;
-        background: #caf3ee;
-        opacity: 0.2;
-    }
 }
 .el16 {
     @include for-1340-px {

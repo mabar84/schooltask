@@ -21,6 +21,12 @@
             font-size: 12px;
             line-height: 18px;
         }
+        .link {
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.75;
+            }
+        }
     }
     .ellipse {
         width: 322px;

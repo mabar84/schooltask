@@ -75,6 +75,7 @@
             color: #ffffff;
             background: #f8991d;
             border-radius: 8px;
+            position: relative;
             @include for-1000-px {
                 padding: 10px 40px;
                 text-align: center;
@@ -82,6 +83,25 @@
             }
             @include for-760-px {
                 margin-right: auto;
+            }
+            &::before {
+                content: "";
+                border-radius: 8px;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                border-radius: 8px;
+                position: absolute;
+            }
+            &:hover {
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                @include for-640-px {
+                    box-shadow: none;
+                }
+                &::before {
+                    background: rgba(255, 255, 255, 0.08);
+                }
             }
         }
     }

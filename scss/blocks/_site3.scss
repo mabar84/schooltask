@@ -70,9 +70,14 @@
             }
             .name {
                 font-weight: 600;
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 30px;
+                line-height: 42px;
+                @include for-1000-px {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
                 @include for-640-px {
+                    align-items: center;
                     font-size: 16px;
                     line-height: 24px;
                 }

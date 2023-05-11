@@ -87,6 +87,10 @@ address {
   color: #131930;
 }
 
+.oferflow-hidden {
+  overflow-x: hidden;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -336,6 +340,12 @@ address {
     line-height: 18px;
   }
 }
+.breadcrumbs-wrapper .breadcrumbs .link {
+  transition: 0.3s;
+}
+.breadcrumbs-wrapper .breadcrumbs .link:hover {
+  opacity: 0.75;
+}
 .breadcrumbs-wrapper .ellipse {
   width: 322px;
   height: 74px;
@@ -528,6 +538,7 @@ address {
 
 .main {
   position: relative;
+  overflow: hidden;
   display: grid;
   column-gap: 24px;
   row-gap: 60px;
@@ -1160,17 +1171,6 @@ address {
 @media (max-width: 1000px) {
   .el15 {
     display: none;
-  }
-}
-@media (max-width: 640px) {
-  .el15 {
-    width: 168px;
-    height: 168px;
-    left: 252px;
-    top: 1789px;
-    display: block;
-    background: #caf3ee;
-    opacity: 0.2;
   }
 }
 
@@ -2524,6 +2524,7 @@ address {
   color: #ffffff;
   background: #f8991d;
   border-radius: 8px;
+  position: relative;
 }
 @media (max-width: 1000px) {
   .banners .help .send {
@@ -2536,6 +2537,27 @@ address {
   .banners .help .send {
     margin-right: auto;
   }
+}
+.banners .help .send::before {
+  content: "";
+  border-radius: 8px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  position: absolute;
+}
+.banners .help .send:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 640px) {
+  .banners .help .send:hover {
+    box-shadow: none;
+  }
+}
+.banners .help .send:hover::before {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .books {
@@ -2556,7 +2578,6 @@ address {
   .books .cards {
     overflow: hidden;
     height: 302px;
-    justify-content: space-between;
   }
 }
 .books .cards .book {
@@ -2564,6 +2585,10 @@ address {
   max-width: 134px;
   font-size: 12px;
   line-height: 18px;
+}
+.books .cards .book:hover .name {
+  transition: 0.3s;
+  opacity: 0.75;
 }
 .books .cards .book .image-wrapper {
   margin-bottom: 16px;
@@ -3090,11 +3115,18 @@ address {
 }
 .site3 .big-book .right .name {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 30px;
+  line-height: 42px;
+}
+@media (max-width: 1000px) {
+  .site3 .big-book .right .name {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 @media (max-width: 640px) {
   .site3 .big-book .right .name {
+    align-items: center;
     font-size: 16px;
     line-height: 24px;
   }
@@ -3644,6 +3676,7 @@ address {
 }
 
 .site7 {
+  min-height: 100vh;
   margin-bottom: 60px;
   position: relative;
   overflow: hidden;

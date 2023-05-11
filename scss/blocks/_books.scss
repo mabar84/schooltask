@@ -13,14 +13,20 @@
         @include for-1025-px {
             overflow: hidden;
             height: 302px;
-            justify-content: space-between;
+            // justify-content: space-between;
         }
         .book {
             min-width: 134px;
             max-width: 134px;
             font-size: 12px;
             line-height: 18px;
+            &:hover {
+                .name {
+                    transition: 0.3s;
 
+                    opacity: 0.75;
+                }
+            }
             .image-wrapper {
                 margin-bottom: 16px;
                 background: rgba(124, 208, 255, 0.5);
