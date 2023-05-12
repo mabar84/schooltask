@@ -1832,6 +1832,7 @@ address {
     left: 459px;
     top: 814px;
     background: #e4eafa;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -1841,6 +1842,7 @@ address {
     left: 459px;
     top: 814px;
     background: #e4eafa;
+    display: none;
   }
 }
 @media (max-width: 640px) {
@@ -1869,6 +1871,7 @@ address {
     top: 856px;
     background: #84a4f9;
     opacity: 0.4;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -1908,6 +1911,7 @@ address {
     top: 2246px;
     background: #91bfe9;
     opacity: 0.2;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -1929,6 +1933,7 @@ address {
     left: 1105px;
     top: 2604px;
     background: #e4eafa;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -1952,6 +1957,7 @@ address {
     top: 2646px;
     background: #84a4f9;
     opacity: 0.4;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -2572,9 +2578,10 @@ address {
   line-height: 42px;
 }
 .books .cards {
+  padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 19px;
 }
 @media (max-width: 1025px) {
   .books .cards {
@@ -3043,10 +3050,6 @@ address {
     line-height: 28px;
   }
 }
-.site2 .books .cards {
-  justify-content: space-between;
-}
-
 .site3 {
   margin-bottom: 60px;
   position: relative;
@@ -3167,9 +3170,6 @@ address {
 }
 .site3 .books {
   margin-bottom: 0;
-}
-.site3 .books .cards {
-  justify-content: space-between;
 }
 .site3 .vk {
   object-fit: cover;
@@ -3322,10 +3322,6 @@ address {
 .site4 .books {
   margin-bottom: 0;
 }
-.site4 .books .cards {
-  justify-content: space-between;
-}
-
 .site5 {
   margin-bottom: 60px;
   position: relative;
