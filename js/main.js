@@ -3,11 +3,11 @@ const classSelect = document.getElementById("class-select");
 const menu = document.getElementById("menu");
 const ellipse = document.querySelector(".ellipse");
 const classSselectItems = menu.querySelectorAll(".class-select_item");
+const menuItems = menu.querySelectorAll(".menu-item");
 const allMenuAdditional = document.querySelectorAll(".menu-additional");
 const navButtons = document.querySelectorAll(".nav-button");
 const navButtonsMobile = document.querySelector(".nav-buttons_mobile");
 const navMenuMobile = document.querySelector(".nav-menu_mobile");
-
 // main input
 searchInput.addEventListener("input", () => {
   console.log(searchInput.value); //value for backend
@@ -30,7 +30,8 @@ classSelect.addEventListener("click", () => {
   function addClass() {
     ellipse.classList.toggle("active");
   }
-  ellipse.classList.contains("active") ? setTimeout(addClass, 800) : ellipse.classList.add("active");
+  ellipse.classList.contains("active") ? setTimeout(addClass, 0) : ellipse.classList.add("active");
+  // ellipse.classList.contains("active") ? setTimeout(addClass, 800) : ellipse.classList.add("active");
 
   allMenuAdditional.forEach((el) => {
     el.classList.remove("active");
@@ -43,7 +44,9 @@ classSelect.addEventListener("click", () => {
       function removeClass() {
         ellipse.classList.remove("active");
       }
-      setTimeout(removeClass, 800);
+
+      // setTimeout(removeClass, 800);
+      setTimeout(removeClass, 0);
       menu.classList.remove("active");
       classSelect.classList.remove("active");
 
@@ -56,11 +59,26 @@ classSelect.addEventListener("click", () => {
 
 // show/close menu-additional
 
-classSselectItems.forEach((el) => {
-  el.addEventListener("mouseenter", () => {
-    const menuAdditional = document.querySelector("." + el.getAttribute("for"));
+// classSselectItems.forEach((el) => {
+//   el.addEventListener("mouseenter", () => {
+//     const menuAdditional = document.querySelector("." + el.getAttribute("for"));
 
-    menuAdditional.classList.add("active");
+//     menuAdditional?.classList.add("active");
+
+//     allMenuAdditional.forEach((el) => {
+//       el.classList.remove("active");
+//     });
+//     menuAdditional.classList.add("active");
+//   });
+// });
+
+menuItems.forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    const menuAdditional = el.querySelector(".menu-additional");
+
+    // menu.style.overflow = "visible";
+
+    menuAdditional?.classList.add("active");
 
     allMenuAdditional.forEach((el) => {
       el.classList.remove("active");
@@ -99,8 +117,8 @@ if (accordionHeaders) {
 }
 
 //accordion mobile menu
-let mobileAccordionHeaders = document.querySelectorAll(".mobile-accordion-header");
-// let mobileAccordionContent = document.querySelectorAll(".mobile-accordion-content");
+let mobileAccordionHeaders = document.querySelectorAll(".menu-accordion-header");
+// let mobileAccordionContent = document.querySelectorAll(".menu-accordion-content");
 if (mobileAccordionHeaders) {
   mobileAccordionHeaders.forEach(function (header) {
     header.addEventListener("click", function () {

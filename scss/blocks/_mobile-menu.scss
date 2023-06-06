@@ -1,4 +1,4 @@
-.mobile-accordion-header {
+.menu-accordion-header {
     transition: border-radius 0.9s ease-out;
     border-radius: 8px;
     &.active {
@@ -12,11 +12,9 @@
         }
     }
 }
-.mobile-accordion-content {
+.menu-accordion-content {
     display: none;
     width: 280px;
-    margin-top: -10px;
-    padding: 0;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
@@ -24,19 +22,22 @@
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
     background: #ffac4e;
-    border-radius: 0px 0px 8px 8px;
     max-height: 0;
     transition: max-height 0.5s ease-out;
     transition: padding 0.7s ease-out;
     overflow: hidden;
-    // display: flex;
-    // flex-direction: column;
+    padding: 11px 16px;
+    border-radius: 8px;
     @include for-760-px {
+        padding: 0;
+        border-radius: 0px 0px 8px 8px;
         display: block;
     }
     &.active {
         max-height: max-content;
-        padding: 9px 0;
-        // display: block;
+        display: block;
+        @include for-760-px {
+            padding: 9px 0;
+        }
     }
 }
