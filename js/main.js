@@ -61,19 +61,6 @@ classSelect.addEventListener("click", () => {
 if (window.innerWidth > 760) {
   // show/close menu-additional
 
-  // classSselectItems.forEach((el) => {
-  //   el.addEventListener("mouseenter", () => {
-  //     const menuAdditional = document.querySelector("." + el.getAttribute("for"));
-
-  //     menuAdditional?.classList.add("active");
-
-  //     allMenuAdditional.forEach((el) => {
-  //       el.classList.remove("active");
-  //     });
-  //     menuAdditional.classList.add("active");
-  //   });
-  // });
-
   menuItems.forEach((el) => {
     el.addEventListener("mouseenter", () => {
       const menuAdditional = el.querySelector(".menu-additional");

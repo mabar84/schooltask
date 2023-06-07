@@ -2433,6 +2433,10 @@ address {
   column-gap: 16px;
   row-gap: 28px;
 }
+.exercises-content_blue {
+  background: rgba(208, 238, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
 @media (max-width: 1000px) {
   .exercises-content {
     justify-content: start;
