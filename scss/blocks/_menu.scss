@@ -13,48 +13,6 @@
     max-height: 0;
     transition: max-height 0.9s ease-out;
     overflow: hidden;
-    // &-accordion-content {
-    //     width: 200px;
-    //     padding: 11px 16px;
-    //     background: #ffac4e;
-    //     position: absolute;
-    //     max-height: max-content;
-    //     z-index: 3;
-    //     display: block;
-    //     // top: 0;
-    //     // left: 260px;
-    //     // display: none;
-    //     @include for-915-px {
-    //         left: 230px;
-    //     }
-    //     &.active {
-    //         z-index: 33;
-    //         display: block;
-    //         max-height: 594px;
-    //         padding-bottom: 16px;
-    //         @include for-760-px {
-    //             max-height: max-content;
-    //         }
-    //     }
-    //     .menu-additional_title {
-    //         font-weight: 600;
-    //         font-size: 16px;
-    //         line-height: 24px;
-    //         display: flex;
-    //         align-items: center;
-    //         text-align: center;
-    //         color: #ffffff;
-    //         @include for-760-px {
-    //             display: none;
-    //         }
-    //     }
-    // }
-    // &-item:hover {
-    //     .menu-accordion-content {
-    //         display: block;
-    //         max-height: max-content;
-    //     }
-    // }
     @include for-915-px {
         width: 262px;
     }
@@ -64,7 +22,6 @@
         z-index: 2;
     }
     &.active {
-        // max-height: 600px;
         max-height: max-content;
         padding-bottom: 16px;
         overflow: visible;
@@ -124,29 +81,5 @@
                 transition: 0.3s;
             }
         }
-        // &_01 {
-        //     top: 228px;
-        // }
-        // &_02 {
-        //     top: 280px;
-        // }
-        // &_03 {
-        //     top: 332px;
-        // }
-        // &_04 {
-        //     top: 384px;
-        // }
-        // &_05 {
-        //     top: 436px;
-        // }
-        // &_06,
-        // &_07,
-        // &_08,
-        // &_09,
-        // &_10,
-        // &_11 {
-        //     top: auto;
-        //     bottom: -561px;
-        // }
     }
 }

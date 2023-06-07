@@ -7,7 +7,8 @@ const menuItems = menu.querySelectorAll(".menu-item");
 const allMenuAdditional = document.querySelectorAll(".menu-additional");
 const navButtons = document.querySelectorAll(".nav-button");
 const navButtonsMobile = document.querySelector(".nav-buttons_mobile");
-const navMenuMobile = document.querySelector(".nav-menu_mobile");
+// const navMenuMobile = document.querySelector(".nav-menu_mobile");
+const navMenuMobile = document.querySelector(".nav-buttons");
 // main input
 searchInput.addEventListener("input", () => {
   console.log(searchInput.value); //value for backend
