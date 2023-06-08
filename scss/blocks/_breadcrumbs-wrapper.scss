@@ -6,22 +6,33 @@
         gap: 0px;
     }
     .breadcrumbs {
-        height: 74px;
         display: flex;
-        gap: 10px;
         align-items: center;
         position: relative;
         font-size: 16px;
-        line-height: 24px;
         color: #636363;
         z-index: 1;
+        flex-wrap: wrap;
         @include for-760-px {
             height: 50px;
             padding-left: 16px;
             font-size: 12px;
             line-height: 18px;
         }
+        & li {
+            &::after {
+                content: "/";
+                padding: 0 5px;
+            }
+            &:last-child {
+                &::after {
+                    content: "";
+                    padding: 0;
+                }
+            }
+        }
         .link {
+            flex-shrink: 0;
             transition: 0.3s;
             &:hover {
                 opacity: 0.75;

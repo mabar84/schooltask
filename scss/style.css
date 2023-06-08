@@ -340,15 +340,13 @@ address {
   }
 }
 .breadcrumbs-wrapper .breadcrumbs {
-  height: 74px;
   display: flex;
-  gap: 10px;
   align-items: center;
   position: relative;
   font-size: 16px;
-  line-height: 24px;
   color: #636363;
   z-index: 1;
+  flex-wrap: wrap;
 }
 @media (max-width: 760px) {
   .breadcrumbs-wrapper .breadcrumbs {
@@ -358,7 +356,16 @@ address {
     line-height: 18px;
   }
 }
+.breadcrumbs-wrapper .breadcrumbs li::after {
+  content: "/";
+  padding: 0 5px;
+}
+.breadcrumbs-wrapper .breadcrumbs li:last-child::after {
+  content: "";
+  padding: 0;
+}
 .breadcrumbs-wrapper .breadcrumbs .link {
+  flex-shrink: 0;
   transition: 0.3s;
 }
 .breadcrumbs-wrapper .breadcrumbs .link:hover {
