@@ -248,7 +248,7 @@ address {
 @media (max-width: 760px) {
   .header .nav-buttons {
     width: 280px;
-    padding: 2px 16px 11px;
+    padding: 11px 16px;
     background: #ffac4e;
     border-radius: 8px;
     position: absolute;
@@ -310,6 +310,7 @@ address {
   }
 }
 .header .nav-button .nav-marker {
+  margin-top: 24px;
   height: 4px;
   background: transparent;
   border-radius: 2px;

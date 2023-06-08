@@ -126,7 +126,7 @@
             }
             @include for-760-px {
                 width: 280px;
-                padding: 2px 16px 11px;
+                padding: 11px 16px;
                 background: #ffac4e;
                 border-radius: 8px;
                 position: absolute;
@@ -206,6 +206,7 @@
                 }
             }
             .nav-marker {
+                margin-top: 24px;
                 height: 4px;
                 background: transparent;
                 border-radius: 2px;
