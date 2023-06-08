@@ -1,4 +1,4 @@
-.main {
+.main.site1 {
     position: relative;
     overflow: hidden;
     display: grid;
@@ -26,51 +26,12 @@
         grid-template-columns: calc(100vw - 20px);
         grid-gap: 30px;
     }
-    .el11 {
-        width: 168px;
-        height: 168px;
-        position: absolute;
-        left: -58px;
-        top: 178px;
-        border-radius: 50%;
-        background: #caf3ee;
-        opacity: 0.2;
-        @include for-1025-px {
-            left: 62px;
-        }
-    }
-    .el12 {
-        position: absolute;
-        width: 62.25px;
-        height: 62.25px;
-        left: 41px;
-        top: 578px;
-        background: #ff7f68;
-        opacity: 0.4;
-        border-radius: 50%;
-        @include for-1025-px {
-            left: 161px;
-        }
-    }
-    .el13 {
-        position: absolute;
-        width: 98px;
-        height: 98px;
-        left: -84px;
-        top: 458px;
-        border-radius: 50%;
-        background: #e9e091;
-        opacity: 0.2;
-        @include for-1025-px {
-            left: -4px;
-        }
-    }
     .subjects {
         grid-area: subjects;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 20px;
-        row-gap: 16px;
+        column-gap: 12px;
+        row-gap: 12px;
         @include for-1340-px {
             justify-content: center;
         }

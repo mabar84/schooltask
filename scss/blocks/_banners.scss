@@ -18,6 +18,7 @@
             padding: 37px 58px;
             display: flex;
             justify-content: space-between;
+            gap: 10px;
         }
         @include for-1000-px {
             padding: 32px 15px;
@@ -58,7 +59,6 @@
             margin-bottom: 24px;
             font-size: 17px;
             line-height: 24px;
-
             @include for-1340-px {
                 margin-bottom: 0;
             }
@@ -67,6 +67,7 @@
             }
         }
         .send {
+            width: max-content;
             display: inline-block;
             padding: 10px 20px;
             font-weight: 600;
