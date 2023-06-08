@@ -1,4 +1,4 @@
-.site4 {
+.answer {
     margin-bottom: 60px;
     position: relative;
     overflow: hidden;
@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 270px;
     grid-template-areas:
         "main-title banners"
-        "answer banners"
+        "answer-img banners"
         "regular-search banners"
         "parts banners"
         "simple-text banners"
@@ -21,7 +21,7 @@
         grid-template-columns: calc(100vw - 108px);
         grid-template-areas:
             "main-title"
-            "answer"
+            "answer-img"
             "regular-search"
             "parts"
             "simple-text"
@@ -52,7 +52,7 @@
             line-height: 32px;
         }
     }
-    .answer {
+    .answer-img {
         padding: 32px;
         &-img {
             object-fit: cover;
