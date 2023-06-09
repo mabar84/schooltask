@@ -942,6 +942,7 @@ address {
   line-height: 22px;
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
 }
 .number.primary {
   background: #f8991d;
