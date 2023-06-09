@@ -71,8 +71,9 @@
     border-radius: 32px;
 }
 .number {
-    width: 30px;
+    min-width: 30px;
     height: 36px;
+    display: block;
     padding: 7px;
     background: #ffa135;
     border-radius: 8px;
@@ -81,7 +82,6 @@
     line-height: 22px;
     color: #ffffff;
     text-align: center;
-    cursor: pointer;
     &.primary {
         background: #f8991d;
     }

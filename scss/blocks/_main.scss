@@ -120,9 +120,6 @@
                 @include for-640-px {
                     column-gap: 17px;
                 }
-                & a {
-                    width: min-content;
-                }
             }
         }
     }

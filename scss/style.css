@@ -695,9 +695,6 @@ address {
     column-gap: 17px;
   }
 }
-.main.home .subjects .card .bottom a {
-  width: min-content;
-}
 .main.home .question {
   grid-area: question;
 }
@@ -932,8 +929,9 @@ address {
 }
 
 .number {
-  width: 30px;
+  min-width: 30px;
   height: 36px;
+  display: block;
   padding: 7px;
   background: #ffa135;
   border-radius: 8px;
@@ -942,7 +940,6 @@ address {
   line-height: 22px;
   color: #ffffff;
   text-align: center;
-  cursor: pointer;
 }
 .number.primary {
   background: #f8991d;
