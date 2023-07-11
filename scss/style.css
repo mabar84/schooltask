@@ -940,6 +940,7 @@ address {
   line-height: 22px;
   color: #ffffff;
   text-align: center;
+  white-space: nowrap;
 }
 .number.primary {
   background: #f8991d;
@@ -1118,6 +1119,7 @@ address {
     height: 98px;
     left: 776px;
     top: 2069px;
+    display: none;
     background: #e9e091;
     opacity: 0.2;
   }
@@ -2578,7 +2580,6 @@ address {
 @media (max-width: 1025px) {
   .books .cards {
     overflow: hidden;
-    height: 302px;
   }
 }
 .books .cards .book {
