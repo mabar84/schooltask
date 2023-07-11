@@ -3297,7 +3297,12 @@ address {
   gap: 16px;
   overflow-x: auto;
   white-space: nowrap;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+  .category-page .links-wrapper {
+    flex-wrap: nowrap;
+  }
 }
 .category-page .links-wrapper .number {
   padding: 10px 20px;
